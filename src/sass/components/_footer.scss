@@ -1,0 +1,26 @@
+@import "../utils/_mixins";
+
+.footer {
+    padding: 5px;
+	margin: 0 !important;
+    height: 40px;
+    background-color: #fff !important;
+    @include rel-pos($zIndex: 1);
+
+    &:after {
+        background-color: inherit;
+        content: '';
+        display: block;
+        height: 100%;
+        transform: skewY(-1deg);
+        transform-origin: 0;
+        @include abs-pos($top: 0, $left: 0, $right: 0, $zIndex: -1);
+    }
+    
+    p {
+        height: 30px;
+        line-height: 30px;
+        margin: 0 !important;
+        padding-right: 20px;
+    }
+}

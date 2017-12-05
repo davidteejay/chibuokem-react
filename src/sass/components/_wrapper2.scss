@@ -1,0 +1,277 @@
+@import "../utils/_mixins";
+
+.wrapper2 {
+    height: auto;
+    width: 100%;
+    
+    .wrapper {
+        width: 100%;
+        height: auto;
+        
+        h4 {
+            margin: 0 ;
+            margin-bottom: 40px;
+            font-style: bolder;
+        }
+        
+        .things-do {
+            height: auto;
+            width: 100%;
+            margin-bottom: 0;
+			padding: 35px;
+            padding-bottom: 75px;
+            background-color: #fff;
+            
+            .col {
+                padding: 10px;
+                
+                img {
+                    height: 150px;
+                    
+                    @media screen and (max-width: 600px){
+                        height: 100px;
+                    }
+                }
+            }
+        }
+        
+        .tools {
+            width: 100%;
+			background-color: #f0f0f0;
+            @include rel-pos($zIndex: 1);
+			
+			
+			&:after {
+				background-color: inherit;
+				content: '';
+				display: block;
+				height: 50%;
+				transform: skewY(2deg);
+				transform-origin: 100%;
+                @include abs-pos($top: 0, $left: 0, $right: 0, $zIndex: -1);
+			}
+
+            .row {
+                padding: 0 50px;
+                margin-bottom: 0px;
+
+                @media screen and (max-width: 600px){
+                    padding: 20px;
+                }
+
+                .col {
+                    padding: 50px;
+                    height: 200px;
+
+                    @media screen and (max-width: 600px){
+                        padding: 10px;
+                        height: 75px;
+                    }
+
+                    .valign {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+    
+    .skills {
+        width: 100%;
+        height: auto;
+        padding: 10px;
+        margin-bottom: 0;
+        background-color: rgba(#000, .2);
+        
+        .hide-on-med-and-down {
+            width: 50%;
+            
+            @media screen and (max-width: 992px){
+                width: 0;
+            }
+        }
+        
+        .valign-wrapper {
+            background-color: rgba(#fff, .7);
+            color: #000;
+            height: inherit;
+            width: 50%;
+            padding: 25px 40px;
+            
+            @media screen and (max-width: 992px){
+                width: 100%;
+            }
+            
+            .valign {
+                width: 100%;
+                height: auto;
+                font: {
+                    size: 17px;
+                    weight: lighter;
+                }
+                
+                h5 {
+                    margin-bottom: 30px;
+                }
+                
+                .progress {
+                    margin: {
+                        top: 20px;
+                        bottom: 20px;
+                    }
+                    
+                    .determinate {
+                        width: 0%;
+                    }
+                    
+                    .flow-html {
+                        animation: flow-html 2s;
+                        animation-fill-mode: forwards;
+                    }
+                    
+                    .flow-css {
+                        animation: flow-css 2s;
+                        animation-fill-mode: forwards;
+                    }
+                    
+                    .flow-js {
+                        animation: flow-js 2s;
+                        animation-fill-mode: forwards;
+                    }
+                    
+                    .flow-python {
+                        animation: flow-python 2s;
+                        animation-fill-mode: forwards;
+                    }
+                    
+                    .flow-php {
+                        animation: flow-php 2s;
+                        animation-fill-mode: forwards;
+                    }
+                }
+            }
+        }
+    }
+    
+    .testimonials {
+        width: 100%;
+        height: auto;
+        padding: 30px;
+        padding: {
+            top: 15px;
+            bottom: 50px;
+        }
+        background-color: #fff;		
+        
+        h4 {
+            margin-top: 30px;
+        }
+
+        .underline2 {
+            margin-bottom: 30px !important;
+        }
+        
+        .slider {
+            width: 75%;
+            margin: auto;
+            
+            @media screen and (max-width: 992px){
+                width: 75%;
+            }
+            
+            @media screen and (max-width: 600px){
+                width: 90%;
+            }
+            
+            .indicators {
+                text-align: left;
+                margin: {
+                    bottom: 10px;
+                    right: 10px;
+                }
+                z-index: 100;
+                padding: {
+                    left: 50px;
+                    bottom: 20px;
+                }
+                
+                @media screen and (max-width: 600px){
+                    padding-left: 10px;
+                }
+                
+                .indicator-item {
+                    background-color: #fff;
+                    border: none;
+
+                    &.active {
+                        background-color: #009688;
+                    }
+                }
+            }
+            
+            .slides {
+                width: 100%;
+                height: inherit;
+                background-color: transparent !important;
+                
+                li {
+                    height: 100%;
+					width: 100%;
+                    // @include background();
+                    background: {
+                        position: center;
+                        repeat: no-repeat;
+                        size: cover;
+                    }
+					
+                    .valign-wrapper {
+						height: 100%;
+						width: 100%;
+						background-color: rgba(#000, .7);
+
+						.valign {
+							height: auto;
+							width: 100%;
+							left: 0 !important;
+							top: auto !important;
+							padding: 60px;
+
+							@media screen and (max-width: 600px){
+								padding: 10px 20px;
+							}
+							
+							p {
+								font-size: 16px;
+								text-align: left;
+								margin: 0;
+
+								@media screen and (max-width: 600px){
+									font-size: 17px;
+								}
+							}
+							
+							.referrer {
+								font: {
+									size: 16px;
+									weight: bolder;
+								}
+
+								@media screen and (max-width: 600px){
+									font-size: 15px;
+								}
+							}
+							
+							.ref-title {
+								font-size: 14px;
+
+								@media screen and (max-width: 600px){
+									font-size: 13px;
+								}
+							}
+						}
+					}
+                }
+            }
+        }
+    }
+}

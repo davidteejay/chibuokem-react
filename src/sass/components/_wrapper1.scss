@@ -1,0 +1,197 @@
+.wrapper1 {
+    height: 100%;
+    width: 100%;
+    
+    .row {
+        height: 100%;
+        width: 100%;
+        padding: 10px;
+        margin: 0;
+        @include abs-pos($zIndex: 1);
+        
+        .hide-on-med-and-down {
+            width: 50%;
+            
+            @media screen and (max-width: 992px){
+                width: 0;
+            }
+        }
+        
+        .valign-wrapper {
+            background-color: rgba(#000, .4);
+            height: inherit;
+            width: 50%;
+            padding: 20px;
+            
+            @media screen and (max-width: 992px){
+                width: 100%;
+            }
+            
+            .valign {
+                width: 100%;
+                height: auto;
+                
+                .img {
+                    height: 220px;
+                    width: 210px;
+                    padding: 10px;
+                    @include border-radius(50%);
+                    margin: auto;
+                    margin-bottom: 20px;
+                    background-color: #cac6d4;
+                    overflow: hidden !important;
+                    
+                    @media screen and (max-width: 1120px){
+                        height: 170px;
+                        width: 165px;
+                    }
+                    
+                    img {
+                        height: 200px;
+                        width: 190px;
+                        @include border-radius(50%);
+
+                        @media screen and (max-width: 1120px){
+                            height: 150px;
+                            width: 145px;
+                        }
+                    }
+                }
+                
+                h1 {
+                    font: {
+                        size: 42px;
+                        weight: lighter;
+                    }
+                    text-transform: uppercase;
+                    letter-spacing: 3px;
+                    margin: 0;
+                    color: #fff;
+                    
+                    @media screen and (max-width: 1120px){
+                        font-size: 30px;
+                    }
+
+                    @media screen and (max-width: 500px){
+                        font-size: 30px;
+                    }
+                }
+                
+                .social {
+                    margin: 20px auto;
+					width: 100%;
+					padding: 10px auto;
+                    
+                    a {
+                        border: 1px solid #fff;
+                        height: 65px;
+                        width: 65px;
+                        line-height: 65px;
+                        margin: 10px;
+						opacity: .7;
+						filter: blur(.9px);
+                        transition: opacity .5s, filter .5s;
+                        
+                        &:hover {
+							opacity: 1;
+							filter: blur(0px);
+                        }
+                        
+                        @media screen and (max-width: 1120px){
+                            line-height: 40px;
+                            height: 40px;
+                            width: 40px;
+                        }
+
+                        @media screen and (max-width: 600px){
+                            margin: 2px !important;
+                        }
+                        
+                        @media screen and (max-height: 500px){
+                            line-height: 40px;
+                            height: 40px;
+                            width: 40px;
+                            margin: 2px;
+                        }
+                        
+                        .mdi::before {
+                            line-height: 65px;
+                            font-size: 28px;
+                            
+                            @media screen and (max-width: 1120px){
+                                line-height: 40px;
+                                font-size: 22px;
+                            }
+                            
+                            @media screen and (max-height: 500px){
+                                line-height: 40px;
+                                font-size: 22px;
+                            }
+                        }
+                    }
+                }
+                
+                h3 {
+                    font: {
+                        weight: lighter;
+                        size: 24px;
+                    }
+                    margin: 0;
+                    color: #fff;
+                    
+                    @media screen and (max-width: 1120px){
+                        font-size: 18px;
+                    }
+                }
+                
+                a[href="#wrapper2"]{
+                    border: 1px solid #fff;
+                    height: 65px;
+                    width: 65px;
+                    line-height: 65px;
+                    margin: {
+                        left: 10px;
+                        right: 10px;
+                        top: 50px;
+                    }
+                    opacity: 1;
+                    animation: {
+                        name: opacity-up-down;
+                        iteration-count: infinite;
+                        duration: 1s;
+                        timing-function: linear;
+                    }
+                    
+                    @media screen and (max-width: 1120px){
+                        margin-top: 30px;
+                        height: 45px;
+                        width: 45px;
+                        line-height: 45px;
+                    }
+                    
+                    @media screen and (max-height: 500px){
+                        margin-top: 30px;
+                        height: 45px;
+                        width: 45px;
+                        line-height: 45px;
+                    }
+
+                    .mdi::before {
+                        line-height: 65px;
+                        font-size: 28px;
+                        
+                        @media screen and (max-width: 1120px){
+                            line-height: 45px;
+                            font-size: 22px;
+                        }
+                        
+                        @media screen and (max-height: 500px){
+                            line-height: 45px;
+                            font-size: 22px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
