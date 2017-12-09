@@ -9,7 +9,12 @@ body, html {
         weight: 500 !important;
     }
     color: #555;
-    @include background($url: '../images/image2.jpg', $attach: fixed);
+    @include background($url: '../images/image2.jpg', $pos: left center, $attach: fixed);
+    scroll-behaviour: smooth;
+
+    @media screen and (max-width: 600px){
+        background-position: center;
+    }
 
     #root {
         width: 100%;

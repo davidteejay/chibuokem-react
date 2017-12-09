@@ -20,17 +20,37 @@
             margin-bottom: 0;
 			padding: 35px;
             padding-bottom: 75px;
-            background-color: #fff;
+            background-color: rgba(#000, .9);
+            color: #fff !important;
+
+            h1 {
+                font: {
+                    size: 32px;
+                    weight: 700;
+                }
+                margin-bottom: 10px;
+            }
+
+            .underline {
+                margin-top: 0 !important;
+                background-color: #fff !important;
+            }
             
             .col {
                 padding: 10px;
+
+                .underline {
+                    margin: 0 !important;
+                    width: 20% !important;
+                }
+
+                h5 {
+                    color: #fff;
+                    font-weight: 700;
+                }
                 
                 img {
-                    height: 150px;
-                    
-                    @media screen and (max-width: 600px){
-                        height: 100px;
-                    }
+                    height: 75px;
                 }
             }
         }
