@@ -2,14 +2,14 @@ import React, { Component } from 'react';
 import webdesign from '../images/logos/webdesign.png';
 import appdesign from '../images/logos/appdesign.png';
 import graphics from '../images/logos/graphicdesign.png';
-import mongo from '../images/logos/mongodb_logo.png';
-import express from '../images/logos/express_logo.png';
-import react from '../images/logos/ReactJS_logo.png';
-import node from '../images/logos/Nodejs_logo.png';
-import sass from '../images/logos/sass_logo.png';
-import jquery from'../images/logos/jQuery_logo.png';
-import materialize from '../images/logos/materialize_logo.png';
-import cordova from '../images/logos/cordova_logo.png';
+// import mongo from '../images/logos/mongodb_logo.png';
+// import express from '../images/logos/express_logo.png';
+// import react from '../images/logos/ReactJS_logo.png';
+// import node from '../images/logos/Nodejs_logo.png';
+// import sass from '../images/logos/sass_logo.png';
+// import jquery from'../images/logos/jQuery_logo.png';
+// import materialize from '../images/logos/materialize_logo.png';
+// import cordova from '../images/logos/cordova_logo.png';
 import parallax1 from '../images/image3.png';
 import logo from '../images/logos/logo.jpg';
 
@@ -126,28 +126,40 @@ export default class Wrapper2 extends Component {
                             <li style={testimonialStyle}>
                                 <div className="valign-wrapper">
                                     <div className="valign caption left-align">
-                                        <h5 className="light white-text"></h5>
+                                        <p className="light white-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum quia possimus blanditiis, odio facilis obcaecati, in molestiae! Ab, consequatur, doloribus.</p>
+                                        <br/>
+                                        <p className="referrer">Lorem ipsum.</p>
+                                        <p className="ref-title light">CEO, Lorem ipsum dolor.</p>
                                     </div>
                                 </div>
                             </li>
                             <li style={testimonialStyle}>
                                 <div className="valign-wrapper">
                                     <div className="valign caption left-align">
-                                        <h5 className="light white-text"></h5>
+                                        <p className="light white-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum quia possimus blanditiis, odio facilis obcaecati, in molestiae! Ab, consequatur, doloribus.</p>
+                                        <br/>
+                                        <p className="referrer">Lorem ipsum.</p>
+                                        <p className="ref-title light">CEO, Lorem ipsum dolor.</p>
                                     </div>
                                 </div>
                             </li>
                             <li style={testimonialStyle}>
                                 <div className="valign-wrapper">
                                     <div className="valign caption left-align">
-                                        <h5 className="light white-text"></h5>
+                                        <p className="light white-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum quia possimus blanditiis, odio facilis obcaecati, in molestiae! Ab, consequatur, doloribus.</p>
+                                        <br/>
+                                        <p className="referrer">Lorem ipsum.</p>
+                                        <p className="ref-title light">CEO, Lorem ipsum dolor.</p>
                                     </div>
                                 </div>
                             </li>
                             <li style={testimonialStyle}>
                                 <div className="valign-wrapper">
                                     <div className="valign caption left-align">
-                                        <h5 className="light white-text"></h5>
+                                        <p className="light white-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum quia possimus blanditiis, odio facilis obcaecati, in molestiae! Ab, consequatur, doloribus.</p>
+                                        <br/>
+                                        <p className="referrer">Lorem ipsum.</p>
+                                        <p className="ref-title light">CEO, Lorem ipsum dolor.</p>
                                     </div>
                                 </div>
                             </li>

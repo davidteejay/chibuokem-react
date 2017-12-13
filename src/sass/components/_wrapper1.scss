@@ -1,9 +1,12 @@
 @import "../utils/_mixins";
 
 .wrapper1 {
-    height:100%;
-    min-height: 600px;
+    height: 100%;
     width: 100%;
+
+    @media screen and (max-width: 992px){
+        height: auto;
+    }
     
     .row {
         height: inherit;
@@ -65,7 +68,7 @@
                 }
                 
                 h4 {
-                    font-size: 22px;
+                    font-size: 26px;
                     margin: 0;
                     color: #000;
                     
@@ -79,18 +82,19 @@
                     width: 40px;
                     line-height: 40px;
                     margin: auto;
+                    margin-top: 10px;
                     opacity: 1;
                     animation: {
                         name: opacity-up-down;
                         iteration-count: infinite;
-                        duration: 1s;
-                        timing-function: linear;
+                        duration: 1.5s;
+                        timing-function: ease-out; 
                     }
 
                     .mdi::before {
                         line-height: 40px;
                         font-size: 28px;
-                        color: #009688;
+                        color: #000;
                     }
                 }
             }

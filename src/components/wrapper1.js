@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import $ from 'jquery';
 
 export default class Wrapper1 extends Component {
     render(){
@@ -23,7 +22,7 @@ export default class Wrapper1 extends Component {
                                 <a href="https://twitter.com/DavidTeejayC" target="_blank" rel="noopener noreferrer" data-delay="50" data-tooltip="Twitter" className="btn-floating tooltipped z-depth-0 transparent center"><i className="mdi mdi-twitter"></i></a>
                                 <a href="https://plus.google.com/112517983973843716765" target="_blank" rel="noopener noreferrer" data-delay="50" data-tooltip="Google+" className="btn-floating tooltipped z-depth-0 transparent center"><i className="mdi mdi-google-plus"></i></a>
                             </div>
-                            <a href="#wrapper2" className="to-about next bubble btn-floating z-depth-0 transparent center"><i className="mdi mdi-chevron-double-down"></i></a>
+                            <a href="#wrapper2" className="to-about next bubble btn-floating z-depth-0 transparent center hide-on-med-and-down"><i className="mdi mdi-chevron-down"></i></a>
                         </div>
                     </div>
                 </div>

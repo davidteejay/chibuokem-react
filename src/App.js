@@ -8,8 +8,8 @@ import Modal from './components/modal';
 import ToTop from './components/top';
 import './icon/mdi/css/materialdesignicons.min.css';
 import './css/materialize.min.css';
-import './css/style.css';
-import './js/script.js';
+import './css/style.min.css';
+import './js/script.min.js';
 import './js/jquery.inview.min.js';
 
 export default class App extends Component {

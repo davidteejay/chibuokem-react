@@ -1,3 +1,5 @@
+//eslint-disable-next-line
+
 const $ = require('jquery');
 const Materialize = require('materialize-css');
 
@@ -37,12 +39,10 @@ $(function(){
     
     //animations
     $(window).scroll(function(){
-        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-            $('.to-top').addClass('slideup').removeClass('slidedown');
-            $('.a2a_kit').fadeIn();
+        if (document.body.scrollTop > 40 || document.documentElement.scrollTop > 40) {
+            $('.to-top').addClass('to-top-slideup').removeClass('to-top-slidedown');
         } else {
-            $('.to-top').addClass('slidedown').removeClass('slideup');
-            $('.a2a_kit').fadeOut();
+            $('.to-top').addClass('to-top-slidedown').removeClass('to-top-slideup');
         }
 
         $(".determinate").each(function(){
@@ -128,10 +128,5 @@ $(function(){
         }
     ];
     
-     Materialize.scrollFire(options);
-
-     $(".clr a").on('click', function(){
-        javascript: window.open(this.getAttribute('data-url'), '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');
-        return false;
-     })
+    Materialize.scrollFire(options);
 });

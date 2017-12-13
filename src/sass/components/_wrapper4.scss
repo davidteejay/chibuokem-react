@@ -74,37 +74,41 @@
                     a {
                         width: 65px;
                         height: 65px;
+                        padding: 0;
                         border: 2px solid #000;
                         color: #000 !important;
                         padding: 0 !important;
                         line-height: 65px;
-                        transition: margin-right .5s, filter .5s;
-						filter: blur(1px);
+                        transition: all .5s;
 						text-align: center;
                         
                         &:hover {
-                            margin-right: 25px;  
-                            filter: blur(0px);
+                            margin-right: 25px;
 						}
 						
 						@media screen and (max-width: 600px){
 							height: 45px;
 							width: 45px;
 							line-height: 45px;
-						}
+                        }
                         
-                        .mdi:before {
-                            color: #000;
-                            height: 65px;
-                            width: 65px;
+                        .mdi {
                             margin: 0;
-							line-height: 65px;
-							
-							@media screen and (max-width: 600px){
-								height: 45px;
-								width: 45px;
-								line-height: 45px;
-							}
+
+                            &:before {
+                                color: #000;
+                                height: 65px;
+                                width: 65px;
+                                margin: 0;
+                                line-height: 65px;
+                                padding: 0;
+                                
+                                @media screen and (max-width: 600px){
+                                    height: 45px;
+                                    width: 45px;
+                                    line-height: 45px;
+                                }
+                            }
                         }
                     }
                 }

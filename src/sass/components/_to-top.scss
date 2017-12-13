@@ -1,28 +1,24 @@
 @import "../utils/_mixins";
+@import "../utils/_anims";
 
 .to-top {
     height: 50px;
     width: 50px;
-    background-color: rgba(#000, .4);
+    background-color: #aaa;
+    border-radius: 50%;
     line-height: 50px;
     text-align: center;
-    @include fixed-pos($bottom: 0, $right: 0, $zIndex: 110);
+    @include fixed-pos($bottom: 20px, $right: 20px, $zIndex: 110);
+    // position: fixed;
+    // right: 20px;
+    // bottom: 20px;
+    // z-index: 110;
 
 
     .mdi::before {
         height: 50px;
         line-height: 50px;
         font-size: 24px;
-        color: #fff !important;
+        color: #000 !important;
     }
-}
-
-.to-top.slideup {
-    animation: to-top-slide-up .5s;
-    animation-fill-mode: forwards;
-}
-
-.to-top.slidedown {
-    animation: to-top-slide-down .5s;
-    animation-fill-mode: forwards;
 }
