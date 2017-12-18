@@ -7,6 +7,16 @@
     @media screen and (max-width: 992px){
         height: auto;
     }
+
+    @media screen and (max-width: 600px){
+        @include background($url: '../images/image2.jpg', $pos: left center, $attach: fixed);
+    }
+
+    .parallax {
+        @media screen and (max-width: 600px){
+            display: none;
+        }
+    }
     
     .row {
         height: inherit;
@@ -43,6 +53,7 @@
                     font-size: 17px;
                     line-height: 1.3;
                     margin: 30px 0;
+                    text-align: justify;
                 }
                 
                 .social {
@@ -52,7 +63,7 @@
                     height: 70px;
                     
                     a {
-                        border: 2px solid #000;
+                        border: 2px solid #333;
                         height: 50px;
                         width: 50px;
                         line-height: 50px;
@@ -61,7 +72,7 @@
                         .mdi::before {
                             line-height: 50px;
                             font-size: 22px;
-                            color: #000;
+                            color: #333;
                             transition: all .5s;
                         }
                     }
@@ -74,27 +85,6 @@
                     
                     @media screen and (max-width: 1120px){
                         font-size: 18px;
-                    }
-                }
-                
-                a[href="#wrapper2"]{
-                    height: 40px;
-                    width: 40px;
-                    line-height: 40px;
-                    margin: auto;
-                    margin-top: 10px;
-                    opacity: 1;
-                    animation: {
-                        name: opacity-up-down;
-                        iteration-count: infinite;
-                        duration: 1.5s;
-                        timing-function: ease-out; 
-                    }
-
-                    .mdi::before {
-                        line-height: 40px;
-                        font-size: 28px;
-                        color: #000;
                     }
                 }
             }

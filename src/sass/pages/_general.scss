@@ -9,7 +9,6 @@ body, html {
         weight: 500 !important;
     }
     color: #555;
-    @include background($url: '../images/image2.jpg', $pos: left center, $attach: fixed);
 
     @media screen and (max-width: 600px){
         background-position: top center;

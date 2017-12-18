@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
+import bg from '../images/image2.jpg';
 
 export default class Wrapper1 extends Component {
     render(){
         return (
-            <div className="wrapper1" id="wrapper1">
+            <div className="wrapper1 parallax-container" id="wrapper1">
                 <div className="row">
                     <div className="col m6 s12 hide-on-small-only"></div>
                     <div className="col m6 s12 valign-wrapper">
@@ -22,10 +23,11 @@ export default class Wrapper1 extends Component {
                                 <a href="https://twitter.com/DavidTeejayC" target="_blank" rel="noopener noreferrer" data-delay="50" data-tooltip="Twitter" className="btn-floating tooltipped z-depth-0 transparent center"><i className="mdi mdi-twitter"></i></a>
                                 <a href="https://plus.google.com/112517983973843716765" target="_blank" rel="noopener noreferrer" data-delay="50" data-tooltip="Google+" className="btn-floating tooltipped z-depth-0 transparent center"><i className="mdi mdi-google-plus"></i></a>
                             </div>
-                            <a href="#wrapper2" className="to-about next bubble btn-floating z-depth-0 transparent center hide-on-med-and-down"><i className="mdi mdi-chevron-down"></i></a>
+                            <div href="#wrapper2" data-where="#wrapper2" className="to-about next center"><span className="dot"></span></div>
                         </div>
                     </div>
                 </div>
+                <div className="parallax"><img src={bg} alt=""/></div>
             </div>
         )
     }

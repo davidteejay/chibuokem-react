@@ -3,7 +3,7 @@
     height: auto;
     padding: 35px;
     padding-top: 30px;
-    background-color: rgba(#fff, .2);
+    background-color: rgba(#fff, .6);
     
     .row {
         width: 100%;
@@ -24,7 +24,7 @@
             
             p {
                 width: 75%;
-                color: #000;
+                color: #333;
                 
                 @media screen and (max-width: 600px){
                     width: 100%;
@@ -34,29 +34,29 @@
             form {
                 margin: 0;
                 width: 85%;
-                color: #000;
+                color: #333;
                 
                 @media screen and (max-width: 600px){
                     width: 100%;
-                }                
+                }
 
                 .input-field {
                     label {
-                        color: #000;
+                        color: #333;
                         font-weight: 300;
+
+                        &.active {
+                            color: #009688 !important;
+                            font-weight: 700;
+                        }
                     }
                     
                     input[type=text], input[type=email], textarea {
-                        border-bottom: .5px solid #000;
+                        border-bottom: 1px solid #333;
 
                         &:focus {
-                            border-bottom: 2px solid #000;
+                            border-bottom: 2px solid #009688;
                             box-shadow: none;
-                        }
-
-                        &:focus + label {
-                            color: #009688 !important;
-                            font-weight: 700;
                         }
                     }
                 }

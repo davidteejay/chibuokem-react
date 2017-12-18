@@ -4,21 +4,17 @@
 .to-top {
     height: 50px;
     width: 50px;
-    background-color: #aaa;
+    background-color: #009688;
     border-radius: 50%;
     line-height: 50px;
     text-align: center;
     @include fixed-pos($bottom: 20px, $right: 20px, $zIndex: 110);
-    // position: fixed;
-    // right: 20px;
-    // bottom: 20px;
-    // z-index: 110;
 
 
     .mdi::before {
         height: 50px;
         line-height: 50px;
         font-size: 24px;
-        color: #000 !important;
+        color: #fff !important;
     }
 }

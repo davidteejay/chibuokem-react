@@ -22,7 +22,7 @@ $(function(){
     $('.parallax').parallax();
     
     //smooth scrolling on anchor link clicks
-    $(".next, .to-top").on('click', function(event){
+    $(".to-top").on('click', function(event){
         event.preventDefault();
 
         var hash = this.hash;
@@ -31,6 +31,14 @@ $(function(){
             scrollTop: $(hash).offset().top
         }, 500);
     });
+
+    $(".next").on('click', () => {
+        var hash = $(".next").data('where');
+
+        $('html, body').animate({
+            scrollTop: $(hash).offset().top
+        }, 1000);
+    })
     
     $('.slider').slider({
         interval: 4500,

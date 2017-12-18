@@ -1,0 +1,25 @@
+@import "../utils/_mixins";
+
+.to-about {
+    height: 30px;
+    width: 18px;
+    border-radius: 8px;
+    border: 1.5px solid #333;
+    color: #333;
+    text-align: center;
+    cursor: pointer;
+    padding: 0;
+    @include rel-pos();
+    margin: 20px 0;
+
+    .dot {
+        height: 5px;
+        width: 5px;
+        border-radius: 50%;
+        background-color: #333;
+        display: inline-block;
+        @include abs-pos($top: 3px, $left: 4.7px);
+        opacity: 0;
+        animation: opacity-up-down 1.5s infinite;
+    }
+}

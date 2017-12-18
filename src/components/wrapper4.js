@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import bg from '../images/image2.jpg';
 
 export default class Wrapper4 extends Component {
     render(){
@@ -6,7 +7,7 @@ export default class Wrapper4 extends Component {
             display: 'none'
         }
         return (
-            <div className="wrapper4" id="wrapper4">
+            <div className="wrapper4 parallax-container" id="wrapper4">
                 <div className="row">
                     <h3 className="light center slideanim">GET IN TOUCH</h3>
                     <div className="underline slideanim"></div>
@@ -47,6 +48,7 @@ export default class Wrapper4 extends Component {
                         </ul>
                     </div>
                 </div>
+                <div className="parallax"><img src={bg} alt=""/></div>
             </div>
         )
     }

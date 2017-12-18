@@ -10,7 +10,7 @@ export default class Wrapper3 extends Component {
                 <h4 className="slideanim center light">HERE ARE A FEW OF THE PROJECTS I'VE WORKED ON:</h4>
                 <div className="underline2 slideanim"></div>
                 <div className="row">
-                    <img src={softimony} className="hoverable materialboxed slideanim z-depth-0" data-caption="Sofitmony.com" alt="softimony.com"/>
+                    <img src={softimony} className="materialboxed slideanim z-depth-0" data-caption="Sofitmony.com" alt="softimony.com"/>
                     <img src={alawhyte} className="materialboxed slideanim z-depth-0" data-caption="Alawhyte.com" alt="alawhyte.com"/>
                     <img src={bsb} className="materialboxed slideanim z-depth-0" alt="bestsolutionbooks.com" data-caption="BestSolutionBooks.com"/>
                 </div>
