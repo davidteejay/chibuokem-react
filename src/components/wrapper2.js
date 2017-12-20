@@ -2,15 +2,6 @@ import React, { Component } from 'react';
 import webdesign from '../images/logos/webdesign.png';
 import appdesign from '../images/logos/appdesign.png';
 import graphics from '../images/logos/graphicdesign.png';
-// import mongo from '../images/logos/mongodb_logo.png';
-// import express from '../images/logos/express_logo.png';
-// import react from '../images/logos/ReactJS_logo.png';
-// import node from '../images/logos/Nodejs_logo.png';
-// import sass from '../images/logos/sass_logo.png';
-// import jquery from'../images/logos/jQuery_logo.png';
-// import materialize from '../images/logos/materialize_logo.png';
-// import cordova from '../images/logos/cordova_logo.png';
-import parallax1 from '../images/image3.png';
 import logo from '../images/logos/logo.jpg';
 
 export default class Wrapper2 extends Component {
@@ -44,69 +35,40 @@ export default class Wrapper2 extends Component {
                             <p className="light">I create awesome designs for logos, banners and flyers for advertising events, organizations amongst others.</p>
                         </div>
                     </div>
-                    {/* <div className="tools">
-                        <div className="row">
-                            <div className="col s3 valign-wrapper center slideanim2">
-                                <img src={mongo} alt="" className="responsive-img valign"/>
-                            </div>
-                            <div className="col s3 valign-wrapper center slideanim2">
-                                <img src={express} alt="" className="responsive-img valign"/>
-                            </div>
-                            <div className="col s3 valign-wrapper center slideanim2">
-                                <img src={react} alt="" className="responsive-img valign"/>
-                            </div>
-                            <div className="col s3 valign-wrapper center slideanim2">
-                                <img src={node} alt="" className="responsive-img valign"/>
-                            </div>
-                            <div className="col s3 valign-wrapper center slideanim">
-                                <img src={sass} className="responsive-img valign" alt=""/>
-                            </div>
-                            <div className="col s3 valign-wrapper center slideanim">
-                                <img src={jquery} className="responsive-img valign" alt=""/>
-                            </div>
-                            <div className="col s3 valign-wrapper center slideanim">
-                                <img src={materialize} alt="" className="responsive-img valign"/>
-                            </div>
-                            <div className="col s3 valign-wrapper center slideanim">
-                                <img src={cordova} className="responsive-img valign" alt=""/>
-                            </div>
-                        </div>
-                    </div> */}
                 </div>
-                <div className="skills parallax-container row" id="skills">
-                    <div className="col l6 valign-wrapper">
-                        <div className="skills-content valign light">
-                            <h5 className="light">HERE ARE A FEW OF MY SKILLS:</h5>
-                            <div className="progress transparent">
-                                <div className="determinate teal html"></div>
-                            </div>
-                            <i className="mdi mdi-language-html5"></i>&nbsp;&nbsp;HTML5
-                            <div className="right"><span className="timer">90</span>%</div>
-                            <div className="progress transparent">
-                                <div className="determinate teal css"></div>
-                            </div>
-                            <i className="mdi mdi-language-css3"></i>&nbsp;&nbsp;CSS3 | SASS
-                            <div className="right"><span className="timer">85</span>%</div>
-                            <div className="progress transparent">
-                                <div className="determinate teal js"></div>
-                            </div>
-                            <i className="mdi mdi-language-javascript"></i>&nbsp;&nbsp;JAVASCRIPT
-                            <div className="right"><span className="timer">70</span>%</div>
-                            <div className="progress transparent">
-                                <div className="determinate teal php"></div>
-                            </div>
-                            <i className="mdi mdi-language-php"></i>&nbsp;&nbsp;PHP | MYSQL
-                            <div className="right"><span className="timer">65</span>%</div>
-                            <div className="progress transparent">
-                                <div className="determinate teal python"></div>
-                            </div>
-                            <i className="mdi mdi-language-python"></i>&nbsp;&nbsp;PYTHON
-                            <div className="right"><span className="timer">35</span>%</div>
+                <div className="skills row center" id="skills">
+                    <h2>HERE ARE A FEW OF MY SKILLS</h2>
+                    <div className="underline slideanim"></div>
+                    <div className="col s6 m4 center">
+                        <div className="icon z-depth-2">
+                            <i className="devicon-html5-plain "></i>
+                            <p className="light">HTML5</p>
                         </div>
                     </div>
-                    <div className="col l6 hide-on-med-and-down">
+                    <div className="col s6 m4 center">
+                        <div className="icon z-depth-2">
+                            <i className="devicon-sass-plain "></i>
+                            <p className="light">SASS, CSS3</p>
+                        </div>
                     </div>
-                    <div className="parallax"><img src={parallax1} alt=""/></div>
+                    <div className="col s6 m4 center">
+                        <div className="icon z-depth-2">
+                            <i className="devicon-javascript-plain "></i>
+                            <p className="light">ReactJS, ExpressJS, NodeJS</p>
+                        </div>
+                    </div>
+                    <div className="col s6 m4 offset-m2 center">
+                        <div className="icon z-depth-2">
+                            <i className="devicon-php-plain "></i>
+                            <p className="light">PHP</p>
+                        </div>
+                    </div>
+                    <div className="col s6 m4 center offset-s3">
+                        <div className="icon z-depth-2">
+                            <i className="devicon-mongodb-plain"></i>
+                            <p className="light">MONGODB</p>
+                        </div>
+                    </div>                   
                 </div>
                 <div className="testimonials">
                     <h4 className="light center">HERE'S WHAT PEOPLE ARE SAYING ABOUT ME:</h4>

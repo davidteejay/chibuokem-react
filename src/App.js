@@ -6,6 +6,8 @@ import Wrapper4 from './components/wrapper4';
 import Footer from './components/footer';
 import Modal from './components/modal';
 import ToTop from './components/top';
+import './icon/devicon/devicon.min.css';
+import './icon/devicon/devicon-colors.css';
 import './icon/mdi/css/materialdesignicons.min.css';
 import './css/materialize.min.css';
 import './css/style.min.css';

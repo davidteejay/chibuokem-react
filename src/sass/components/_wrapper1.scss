@@ -4,16 +4,16 @@
     height: 100%;
     width: 100%;
 
-    @media screen and (max-width: 992px){
+    @include mQ(992px){
         height: auto;
     }
 
-    @media screen and (max-width: 600px){
+    @include mQ(600px){
         @include background($url: '../images/image2.jpg', $pos: left center, $attach: fixed);
     }
 
     .parallax {
-        @media screen and (max-width: 600px){
+        @include mQ(600px){
             display: none;
         }
     }
@@ -27,7 +27,7 @@
             background-color: rgba(#fff, .9);
             height: inherit;
 
-            @media screen and (max-width: 600px){
+            @include mQ(600px){
                 background-color: rgba(#fff, .6);
             }
             
@@ -43,7 +43,7 @@
                     margin: 0;
                     color: #000;
                     
-                    @media screen and (max-width: 1120px){
+                    @include mQ(1120px){
                         font-size: 30px;
                     }
                 }
@@ -83,7 +83,7 @@
                     margin: 0;
                     color: #000;
                     
-                    @media screen and (max-width: 1120px){
+                    @include mQ(1120px){
                         font-size: 18px;
                     }
                 }

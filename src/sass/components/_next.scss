@@ -3,7 +3,7 @@
 .to-about {
     height: 30px;
     width: 21px;
-    border-radius: 8px;
+    border-radius: 11px;
     border: 2px solid #333;
     color: #333;
     text-align: center;
@@ -11,6 +11,10 @@
     padding: 0;
     @include rel-pos();
     margin: 20px 0;
+
+    @include mQ(600px){
+        margin: 75px 0;
+    }
 
     .dot {
         height: 5px;

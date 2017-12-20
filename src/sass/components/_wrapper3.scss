@@ -20,7 +20,7 @@
 	}
 
 	.material-placeholder {
-		width: 33.3333333333%;
+		width: 33.33333%;
 		height: auto;
 		float: left;
 		left: auto;
@@ -28,7 +28,7 @@
         box-sizing: border-box;
         padding: 3px;
 
-        @media screen and (max-width: 992px){
+        @include mQ(992px){
             width: 50%;
         }
 
