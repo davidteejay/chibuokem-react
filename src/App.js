@@ -11,8 +11,9 @@ import './icon/devicon/devicon-colors.css';
 import './icon/mdi/css/materialdesignicons.min.css';
 import './css/materialize.min.css';
 import './css/style.min.css';
-import './js/script.min.js';
 import './js/jquery.inview.min.js';
+// import './js/smoothscroll.js';
+import './js/script.min.js';
 
 export default class App extends Component {
     render(){
