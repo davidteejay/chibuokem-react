@@ -1,0 +1,100 @@
+@import "../utils/_mixins";
+.menu-container {
+    .menu {
+        height: 50px;
+        width: 50px;
+        background-color: #000;
+        border-radius: 50%;
+        @include fixed-pos($top: 20px, $right: 20px, $zIndex: 110000000000000000);
+        line-height: 50px;
+
+        a.button-collapse {
+            height: 50px;
+            width: 50px;
+            line-height: 50px;
+
+            i {
+                transition: all .5s;
+
+                &::before {
+                    transition: all .5s;
+                    height: 50px;
+                    width: 50px;
+                    line-height: 50px;
+                    color: #fff;
+                    font-size: 26px;
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+    .side-nav {
+        width: 100%;
+        box-shadow: none;
+        background: linear-gradient(to right, rgba(#009688, .7), rgba(lighten(#009688, 10%), .7), rgba(lighten(#009688, 15%), .7));
+        color: #fff;
+        font-weight: 300;
+
+        .row {
+            margin: 0;
+            width: 100%;
+            padding: 50px;
+
+            .col {
+
+                &#col1 {
+                    border-right: 1px solid #fff;
+
+                    @include mQ(600px){
+                        border: none !important;
+                    }
+
+                    h5 {
+                        font-size: 36px;
+
+                        @include mQ(600px){
+                            font-size: 24px;
+                        }
+
+                        a {
+                            color: #fff !important;
+                            transition: all .5s;
+                            @include rel-pos();
+
+                            &::after {
+                                @include abs-pos($top: 100%, $left: 0);
+                                width: 0;
+                                height: 2px;
+                                content: '';
+                                background-color: #fff;
+                                margin-left: 20px;
+                            }
+
+                            &:hover {
+                                margin-left: 20px;
+                            }
+                        }
+                    }
+                }
+
+                &#col2 {
+                    
+                }
+            }
+        }
+    }
+}
+
+@keyframes fill {
+    from {
+        width: 0;
+    } to {
+        width: (100% - 20);
+    }
+}
+
+.fill::after {
+    animation: fill .5s ease-out;
+    animation-fill-mode: forwards;
+}

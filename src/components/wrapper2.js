@@ -13,7 +13,7 @@ export default class Wrapper2 extends Component {
         return (
             <div className="wrapper2" id="wrapper2">
                 <div className="wrapper">
-                    <div className="things-do row">
+                    <div className="things-do row" id="things-do">
                         <h1 className="center slideanim white-text">WHAT I DO</h1>
                         <div className="underline slideanim"></div>
                         <div className="col m4 s12 slideanim">
@@ -40,37 +40,43 @@ export default class Wrapper2 extends Component {
                     <h2>HERE ARE A FEW OF MY SKILLS</h2>
                     <div className="underline slideanim"></div>
                     <div className="col s6 m4 center">
-                        <div className="icon z-depth-2">
-                            <i className="devicon-html5-plain "></i>
+                        <div className="icon html">
+                            <i className="devicon-html5-plain colored"></i>
                             <p className="light">HTML5</p>
                         </div>
                     </div>
                     <div className="col s6 m4 center">
-                        <div className="icon z-depth-2">
-                            <i className="devicon-sass-plain "></i>
+                        <div className="icon sass">
+                            <i className="devicon-sass-plain colored"></i>
                             <p className="light">SASS, CSS3</p>
                         </div>
                     </div>
                     <div className="col s6 m4 center">
-                        <div className="icon z-depth-2">
-                            <i className="devicon-javascript-plain "></i>
-                            <p className="light">ReactJS, ExpressJS, NodeJS</p>
+                        <div className="icon js">
+                            <i className="devicon-javascript-plain colored"></i>
+                            <p className="light">ReactJS</p>
                         </div>
                     </div>
-                    <div className="col s6 m4 offset-m2 center">
-                        <div className="icon z-depth-2">
-                            <i className="devicon-php-plain "></i>
-                            <p className="light">PHP</p>
+                    <div className="col s6 m4 center">
+                        <div className="icon php">
+                            <i className="devicon-php-plain colored"></i>
+                            <p className="light">PHP, MySQL</p>
                         </div>
                     </div>
-                    <div className="col s6 m4 center offset-s3">
-                        <div className="icon z-depth-2">
-                            <i className="devicon-mongodb-plain"></i>
-                            <p className="light">MONGODB</p>
+                    <div className="col s6 m4 center">
+                        <div className="icon mongo">
+                            <i className="devicon-mongodb-plain colored"></i>
+                            <p className="light">MongoDB</p>
+                        </div>
+                    </div>
+                    <div className="col s6 m4 center">
+                        <div className="icon photoshop">
+                            <i className="devicon-photoshop-plain colored"></i>
+                            <p className="light">Adobe Photoshop</p>
                         </div>
                     </div>                   
                 </div>
-                <div className="testimonials">
+                <div className="testimonials" id="testimonials">
                     <h4 className="light center">HERE'S WHAT PEOPLE ARE SAYING ABOUT ME:</h4>
                     <div className="underline2 slideanim"></div>
                     <div className="slider">

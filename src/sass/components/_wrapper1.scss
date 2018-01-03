@@ -1,14 +1,15 @@
 @import "../utils/_mixins";
 
 .wrapper1 {
-    height: 100%;
+    height: inherit;
     width: 100%;
+
+    @media screen and (min-width: 993px){
+        max-height: 800px;
+    }
 
     @include mQ(992px){
         height: auto;
-    }
-
-    @include mQ(600px){
         @include background($url: '../images/image2.jpg', $pos: left center, $attach: fixed);
     }
 

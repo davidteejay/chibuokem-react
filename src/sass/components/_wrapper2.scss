@@ -18,8 +18,7 @@
             height: auto;
             width: 100%;
             margin-bottom: 0;
-			padding: 35px;
-            padding-bottom: 75px;
+			padding: 75px 35px;
             background-color: rgba(#000, 1);
             color: #fff !important;
 
@@ -62,29 +61,130 @@
     }
     
     .skills {
-        padding: 50px 30px;
+        padding: 50px 100px;
         background-color: #f0f0f0;
+
+        @include mQ(992px){
+            padding: 30px;
+        }
 
         h2 {
             font-size: 32px;
         }
 
+        .underline {
+            margin-bottom: 30px;
+            background: linear-gradient(to right, #e54d26, #cc6699, #f0db4f, #6181b6, #4faa41) !important;
+        }
+
         .col {
-            padding: 30px 10px;
+            padding: 10px;
             text-align: center;
+            margin-bottom: 30px;
 
             .icon {
-                border: 1px solid #009688;
                 width: fit-content;
                 margin: 0 auto;
                 border-radius: 15px;
                 padding-top: 50px;
+                background-color: #fff;
+                height: auto;
+
+                &.html {
+                    border: 1px solid #e54d26;
+                    box-shadow: 0 4px 5px 0 rgba(#e54d26, 0.3), 0 1px 10px 0 rgba(#e54d26, 0.2), 0 2px 4px -1px rgba(#e54d26, 0.5);
+
+                    i::before {
+                        text-shadow: 0 4px 5px rgba(#e54d26, 0.14), 0 1px 10px rgba(#e54d26, 0.12), 0 2px 4px rgba(#e54d26, 0.3);
+                    }
+
+                    p {
+                        background-color: #e54d26;
+                    }
+                }
+
+                &.sass {
+                    border: 1px solid #cc6699;
+                    box-shadow: 0 4px 5px 0 rgba(#cc6699, 0.3), 0 1px 10px 0 rgba(#cc6699, 0.2), 0 2px 4px -1px rgba(#cc6699, 0.5);
+
+                    i::before {
+                        text-shadow: 0 4px 5px rgba(#cc6699, 0.14), 0 1px 10px rgba(#cc6699, 0.12), 0 2px 4px rgba(#cc6699, 0.3);
+                    }
+
+                    p {
+                        background-color: #cc6699;
+                    }
+                }
+
+                &.js {
+                    border: 1px solid #f0db4f;
+                    box-shadow: 0 4px 5px 0 rgba(#f0db4f, 0.3), 0 1px 10px 0 rgba(#f0db4f, 0.2), 0 2px 4px -1px rgba(#f0db4f, 0.5);
+
+                    i::before {
+                        text-shadow: 0 4px 5px rgba(#f0db4f, 0.14), 0 1px 10px rgba(#f0db4f, 0.12), 0 2px 4px rgba(#f0db4f, 0.3);
+                    }
+
+                    p {
+                        background-color: #f0db4f;
+                    }
+                }
+
+                &.php {
+                    border: 1px solid #6181b6;
+                    box-shadow: 0 4px 5px 0 rgba(#6181b6, 0.3), 0 1px 10px 0 rgba(#6181b6, 0.2), 0 2px 4px -1px rgba(#6181b6, 0.5);
+
+                    i::before {
+                        text-shadow: 0 4px 5px rgba(#6181b6, 0.14), 0 1px 10px rgba(#6181b6, 0.12), 0 2px 4px rgba(#6181b6, 0.3);
+                    }
+
+                    p {
+                        background-color: #6181b6;
+                    }
+                }
+
+                &.mongo {
+                    border: 1px solid #4faa41;
+                    box-shadow: 0 4px 5px 0 rgba(#4faa41, 0.3), 0 1px 10px 0 rgba(#4faa41, 0.2), 0 2px 4px -1px rgba(#4faa41, 0.5);
+
+                    i::before {
+                        text-shadow: 0 4px 5px rgba(#4faa41, 0.14), 0 1px 10px rgba(#4faa41, 0.12), 0 2px 4px rgba(#4faa41, 0.3);
+                    }
+
+                    p {
+                        background-color: #4faa41;
+                    }
+                }
+
+                &.photoshop {
+                    border: 1px solid #80b5e2;
+                    box-shadow: 0 4px 5px 0 rgba(#80b5e2, 0.3), 0 1px 10px 0 rgba(#80b5e2, 0.2), 0 2px 4px -1px rgba(#80b5e2, 0.5);
+
+                    i::before {
+                        text-shadow: 0 4px 5px rgba(#80b5e2, 0.14), 0 1px 10px rgba(#80b5e2, 0.12), 0 2px 4px rgba(#80b5e2, 0.3);
+                    }
+
+                    p {
+                        background-color: #80b5e2;
+                    }
+                }
+                
+                @include mQ(992px){
+                    padding-top: 30px;
+                }
 
                 i::before {
                     font-size: 100px;
-                    color: #009688;
                     margin: 50px;
                     margin-bottom: 0;
+
+                    @include mQ(992px){
+                        font-size: 72px;
+                        margin: 30px;
+                    }
+
+                    @include mQ(600px){
+                        font-size: 60px;
+                    }
                 }
 
                 p {
@@ -94,10 +194,10 @@
                         bottom-left-radius: 15px;
                         bottom-right-radius: 15px;
                     }
-                    color: #f0f0f0;
-                    background-color: #009688;
-                    text-transform: uppercase;
+                    color: #fff;
                     padding: 3px 10px;
+                    width: 100%;
+                    text-overflow: ellipsis;
                 }
             }
         }

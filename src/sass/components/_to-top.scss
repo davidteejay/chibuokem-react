@@ -9,7 +9,12 @@
     line-height: 50px;
     text-align: center;
     @include fixed-pos($bottom: 20px, $right: 20px, $zIndex: 110);
+    opacity: .4;
+    transition: all .5s;
 
+    &:hover {
+        opacity: .8;
+    }
 
     .mdi::before {
         height: 50px;

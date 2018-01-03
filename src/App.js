@@ -6,13 +6,11 @@ import Wrapper4 from './components/wrapper4';
 import Footer from './components/footer';
 import Modal from './components/modal';
 import ToTop from './components/top';
+import Menu from './components/menu';
 import './icon/devicon/devicon.min.css';
-import './icon/devicon/devicon-colors.css';
 import './icon/mdi/css/materialdesignicons.min.css';
 import './css/materialize.min.css';
 import './css/style.min.css';
-import './js/jquery.inview.min.js';
-// import './js/smoothscroll.js';
 import './js/script.min.js';
 
 export default class App extends Component {
@@ -20,12 +18,13 @@ export default class App extends Component {
         return (
             <div className="wrapper">
                 <Modal/>
-                <ToTop/>
+                <Menu/>
                 <Wrapper1/>
                 <Wrapper2/>
                 <Wrapper3/>
                 <Wrapper4/>
                 <Footer/>
+                <ToTop/>
             </div>
         )
     }
