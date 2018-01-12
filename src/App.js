@@ -11,9 +11,25 @@ import './icon/devicon/devicon.min.css';
 import './icon/mdi/css/materialdesignicons.min.css';
 import './css/materialize.min.css';
 import './css/style.min.css';
-import './js/script.min.js';
+import $ from 'jquery';
+import 'materialize-css';
 
 export default class App extends Component {
+    componentDidMount(){
+        $('.modal').modal({
+            opacity: 1,
+            starting_top: '0%',
+            ending_top: '0%',
+            complete: function(){
+                window.location.hash = "#!"
+            }
+        });
+        
+        let hash = window.location.hash;
+        if (hash === "#thanks"){
+            $(hash).modal('open');
+        }
+    }
     render(){
         return (
             <div className="wrapper">

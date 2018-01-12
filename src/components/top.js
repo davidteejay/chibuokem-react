@@ -2,6 +2,16 @@ import React, { Component } from 'react';
 import $ from 'jquery';
 
 export default class To_Top extends Component {
+    componentDidMount(){
+        $(window).scroll(() => {
+            if (document.body.scrollTop > 40 || document.documentElement.scrollTop > 40) {
+                $('.to-top').addClass('to-top-slideup').removeClass('to-top-slidedown');
+            } else {
+                $('.to-top').addClass('to-top-slidedown').removeClass('to-top-slideup');
+            }  
+        })
+    }
+    
     handleClick(e){
         e.preventDefault();
 

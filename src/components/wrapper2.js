@@ -3,8 +3,15 @@ import webdesign from '../images/logos/webdesign.png';
 import appdesign from '../images/logos/appdesign.png';
 import graphics from '../images/logos/graphicdesign.png';
 import logo from '../images/logos/logo.jpg';
+import $ from 'jquery';
 
 export default class Wrapper2 extends Component {
+    componentDidMount(){
+        $('.slider').slider({
+            interval: 4500,
+            transition: 1000
+        });
+    }
     render(){
         let testimonialStyle = {
             backgroundImage: 'url(' + logo + ')'

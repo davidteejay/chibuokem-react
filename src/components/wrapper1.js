@@ -1,7 +1,13 @@
 import React, { Component } from 'react';
 import bg from '../images/image2.jpg';
+import $ from 'jquery';
+import 'materialize-css';
 
 export default class Wrapper1 extends Component {
+    componentDidMount(){
+        $('.parallax').parallax();
+    }
+
     render(){
         return (
             <div className="wrapper1 parallax-container" id="wrapper1">

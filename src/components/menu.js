@@ -1,7 +1,50 @@
 import React, { Component } from 'react';
-import 'jquery';
+import $ from 'jquery';
+import 'materialize-css';
 
 export default class Menu extends Component {
+    componentDidMount(){
+        $('a.button-collapse').sideNav({
+            menuwidth: '100%',
+            closeOnClick: true,
+            draggable: true,
+            onOpen: () => {
+                $('i.mdi-sort-variant').removeClass('mdi-sort-variant')
+                                       .addClass('mdi-close')
+            },
+            onClose: () => {
+                $('i.mdi-close').removeClass('mdi-close')
+                                .addClass('mdi-sort-variant')
+            },
+            inDuration: 600,
+            outDuration: 600
+        })
+        
+        //smooth scrolling on anchor link clicks
+    }
+
+    handleClick(e){
+        e.preventDefault();
+
+        let loc = e.target.hash;
+
+        $('html, body').animate({
+            scrollTop: $(loc).offset().top
+        }, 1000);
+    }
+
+    fillUp(e){
+        e.preventDefault();
+
+        e.target.classList.add('fill');
+    }
+
+    empty(e){
+        e.preventDefault();
+
+        e.target.classList.remove('fill');
+    }
+
     render(){
         return (
             <div className="menu-container">
@@ -11,12 +54,12 @@ export default class Menu extends Component {
                 <div className="side-nav valign-wrapper" id="sideMenu">
                     <div className="valign row">
                         <div className="col s12 m6" id="col1">
-                            <h5><a className="link" href="#wrapper1">My Bio</a></h5>
-                            <h5><a className="link" href="#things-do">Things I Do</a></h5>
-                            <h5><a className="link" href="#skills">My Skills</a></h5>
-                            <h5><a className="link" href="#testimonials">Testimonials</a></h5>
-                            <h5><a className="link" href="#wrapper3">Portfolio</a></h5>
-                            <h5><a className="link" href="#wrapper4">Contact Me</a></h5>
+                            <h5><a className="link" onClick={this.handleClick.bind(this)} onMouseEnter={this.fillUp.bind(this)} onMouseLeave={this.empty.bind(this)} href="#wrapper1">My Bio</a></h5>
+                            <h5><a className="link" onClick={this.handleClick.bind(this)} onMouseEnter={this.fillUp.bind(this)} onMouseLeave={this.empty.bind(this)} href="#things-do">Things I Do</a></h5>
+                            <h5><a className="link" onClick={this.handleClick.bind(this)} onMouseEnter={this.fillUp.bind(this)} onMouseLeave={this.empty.bind(this)} href="#skills">My Skills</a></h5>
+                            <h5><a className="link" onClick={this.handleClick.bind(this)} onMouseEnter={this.fillUp.bind(this)} onMouseLeave={this.empty.bind(this)} href="#testimonials">Testimonials</a></h5>
+                            <h5><a className="link" onClick={this.handleClick.bind(this)} onMouseEnter={this.fillUp.bind(this)} onMouseLeave={this.empty.bind(this)} href="#wrapper3">Portfolio</a></h5>
+                            <h5><a className="link onClick={this.handleClick.bind(this)}" onMouseEnter={this.fillUp.bind(this)} onMouseLeave={this.empty.bind(this)} href="#wrapper4">Get In Touch</a></h5>
                         </div>
                         <div className="col s12 m6" id="col2">
                             

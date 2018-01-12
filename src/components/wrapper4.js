@@ -1,7 +1,23 @@
 import React, { Component } from 'react';
 import bg from '../images/image2.jpg';
+import $ from 'jquery';
+import Materialize from 'materialize-css';
 
 export default class Wrapper4 extends Component {
+    componentDidMount(){
+        let options = [
+            { selector: '#social-menu', offset: 300, callback: function(el) {
+                Materialize.showStaggeredList($(el));
+            } 
+            },
+            { selector: "#social-menu2", offset: 300, callback:function(el){
+                Materialize.showStaggeredList($(el));
+            } 
+            }
+        ];
+        
+        Materialize.scrollFire(options);
+    }
     render(){
         let style = {
             display: 'none'
