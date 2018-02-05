@@ -16,8 +16,8 @@ export default class To_Top extends Component {
         e.preventDefault();
 
         $('html, body').animate({
-            scrollTop: $('#wrapper1').offset().top
-        }, 1000);
+            scrollTop: $("#wrapper1").offset().top
+        }, 1000, "easeInOutExpo");
     }
 
     render(){

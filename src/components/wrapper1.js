@@ -7,7 +7,15 @@ export default class Wrapper1 extends Component {
     componentDidMount(){
         $('.parallax').parallax();
     }
-
+    
+    handleClick(e){
+        e.preventDefault();
+        
+        $('html, body').animate({
+            scrollTop: $("#wrapper2").offset().top
+        }, 1000, "easeInOutExpo");
+    }
+    
     render(){
         return (
             <div className="wrapper1 parallax-container" id="wrapper1">
@@ -29,7 +37,7 @@ export default class Wrapper1 extends Component {
                                 <a href="https://twitter.com/DavidTeejayC" target="_blank" rel="noopener noreferrer" data-delay="50" data-tooltip="Twitter" className="btn-floating tooltipped z-depth-0 transparent center"><i className="mdi mdi-twitter"></i></a>
                                 <a href="https://plus.google.com/112517983973843716765" target="_blank" rel="noopener noreferrer" data-delay="50" data-tooltip="Google+" className="btn-floating tooltipped z-depth-0 transparent center"><i className="mdi mdi-google-plus"></i></a>
                             </div>
-                            <div href="#wrapper2" data-where="#wrapper2" className="to-about next center"><span className="dot"></span></div>
+                            <div onClick={this.handleClick.bind(this)} className="to-about next center"><span className="dot"></span></div>
                         </div>
                     </div>
                 </div>
