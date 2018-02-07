@@ -5,9 +5,9 @@ body, html {
     height: 100%;
 	font: {
         family: "Museo", sans-serif !important;
-        weight: 500 !important;
+        weight: lighter !important;
     }
-    color: #555;
+    color: #000;
 
     @include mQ(600px){
         background-position: top center;

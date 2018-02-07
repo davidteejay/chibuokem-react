@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import softimony from '../images/softimony.jpg';
-import alawhyte from '../images/alawhyte.jpg';
-import bsb from '../images/bsb.jpg';
+import acm from '../images/acm.png';
+// import alawhyte from '../images/alawhyte.jpg';
+import bsb from '../images/bsb.png';
 import alumni from '../images/alumni.png';
 
 export default class Wrapper3 extends Component {
@@ -11,10 +11,30 @@ export default class Wrapper3 extends Component {
                 <h4 className="slideanim center light">HERE ARE A FEW OF THE PROJECTS I'VE WORKED ON:</h4>
                 <div className="underline2 slideanim"></div>
                 <div className="row" id="portfolio">
-                    <img src={softimony} className="materialboxed slideanim z-depth-0" data-caption="Sofitmony.com" alt="softimony.com"/>
-                    <img src={alawhyte} className="materialboxed slideanim z-depth-0" data-caption="Alawhyte.com" alt="alawhyte.com"/>
-                    <img src={bsb} className="materialboxed slideanim z-depth-0" alt="bestsolutionbooks.com" data-caption="BestSolutionBooks.com"/>
-                    <img src={alumni} className="materialboxed slideanim z-depth-0" alt="futaalumniworldwide.org" data-caption="FUTAAlumniWorldWide.org"/>
+                    <div className="col s12 m6 center">
+                        <img src={acm} alt="FUTA ACM's Website"/>
+                        <h5 className="light center">
+                            ASSOCIATION FOR COMPUTING AND MACHINERY: FUTA CHAPTER
+                        </h5>
+                        <a href="//futa.acm.org" target="_blank" rel="noopener noreferrer">VIEW PROJECT</a>
+                    </div>
+                    <div className="col s12 m6 center">
+                        <img src={alumni} alt="FUTA ACM's Website"/>
+                        <h5 className="light center">
+                            ASSOCIATION FOR COMPUTING AND MACHINERY: FUTA CHAPTER
+                        </h5>
+                        <a href="//futa.acm.org" target="_blank" rel="noopener noreferrer">VIEW PROJECT</a>
+                    </div>
+                </div>
+                <div className="row">
+                    <div className="col s12 m6 center">
+                        <img src={bsb} alt="FUTA ACM's Website"/>
+                        <h5 className="light center">
+                            ASSOCIATION FOR COMPUTING AND MACHINERY: FUTA CHAPTER
+                        </h5>
+                        <a href="//futa.acm.org" target="_blank" rel="noopener noreferrer">VIEW PROJECT</a>
+                    </div>
+                    <div className="col s12 m6 center"></div>
                 </div>
             </div>
         )
