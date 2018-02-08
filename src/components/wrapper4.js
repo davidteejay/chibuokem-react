@@ -48,7 +48,7 @@ export default class Wrapper4 extends Component {
                                 <input type="text" name="_gotcha" style={style} />
                                 <input type="hidden" name="_next" value="http://chibuokem.herokuapp.com/#thanks" />
                             </div>
-                            <div className="input-field col s12 center slideanim3">
+                            <div className="input-field col s12 slideanim3">
                                 <button type="submit" className="btn teal darken-2 z-depth-0 waves-effect waves-light">SEND</button>
                             </div>
                         </form>

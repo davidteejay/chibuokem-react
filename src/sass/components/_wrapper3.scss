@@ -1,11 +1,8 @@
 .wrapper3 {
-    padding: {
-        top: 50px;
-        bottom: 20px;
-    }
+    padding: 30px 35px;
 	height: fit-content;
     width: 100%;
-    background-color: #f0f0f0;
+    background-color: #fff;
     
     h4 {
         margin: 0;
@@ -24,10 +21,6 @@
                 margin: 0 auto;
                 height: auto;
             }
-
-            h5 {
-                margin-top: 0;
-            }
         }
 
         a {
@@ -37,11 +30,12 @@
             height: 50px;
             line-height: 48px;
             background-color: transparent;
-            border: 2px solid #000;
+            border: 1px solid #000;
             border-radius: 25px;
             color: #000;
-            font-weight: bold;
+            font-weight: 300;
             transition: all .5s;
+            margin: 15px auto;
 
             &:hover {
                 width: 165px;

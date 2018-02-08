@@ -3,7 +3,7 @@ import $ from 'jquery';
 import 'materialize-css';
 
 export default class Menu extends Component {
-    componentDidMount(){
+    componentDidMount(){        
         $('a.button-collapse').sideNav({
             menuwidth: '100%',
             closeOnClick: true,
@@ -19,8 +19,6 @@ export default class Menu extends Component {
             inDuration: 600,
             outDuration: 600
         })
-        
-        //smooth scrolling on anchor link clicks
     }
 
     handleClick(e){
@@ -30,7 +28,7 @@ export default class Menu extends Component {
 
         $('html, body').animate({
             scrollTop: $(loc).offset().top
-        }, 1000);
+        }, 1000, "easeInOutExpo");
     }
 
     fillUp(e){
@@ -49,17 +47,17 @@ export default class Menu extends Component {
         return (
             <div className="menu-container">
                 <div className="menu">
-                    <a href="#!" data-activates="sideMenu" className="button-collapse"><i className="mdi mdi-sort-variant"></i></a>
+                    <a href="#!" style={{display: 'none'}} data-activates="sideMenu" className="button-collapse"><i className="mdi mdi-sort-variant"></i></a>
                 </div>
                 <div className="side-nav valign-wrapper" id="sideMenu">
                     <div className="valign row">
                         <div className="col s12 m6" id="col1">
                             <h5><a className="link" onClick={this.handleClick.bind(this)} onMouseEnter={this.fillUp.bind(this)} onMouseLeave={this.empty.bind(this)} href="#wrapper1">My Bio</a></h5>
                             <h5><a className="link" onClick={this.handleClick.bind(this)} onMouseEnter={this.fillUp.bind(this)} onMouseLeave={this.empty.bind(this)} href="#things-do">Things I Do</a></h5>
+                            <h5><a className="link" onClick={this.handleClick.bind(this)} onMouseEnter={this.fillUp.bind(this)} onMouseLeave={this.empty.bind(this)} href="#wrapper3">Portfolio</a></h5>
                             <h5><a className="link" onClick={this.handleClick.bind(this)} onMouseEnter={this.fillUp.bind(this)} onMouseLeave={this.empty.bind(this)} href="#skills">My Skills</a></h5>
                             <h5><a className="link" onClick={this.handleClick.bind(this)} onMouseEnter={this.fillUp.bind(this)} onMouseLeave={this.empty.bind(this)} href="#testimonials">Testimonials</a></h5>
-                            <h5><a className="link" onClick={this.handleClick.bind(this)} onMouseEnter={this.fillUp.bind(this)} onMouseLeave={this.empty.bind(this)} href="#wrapper3">Portfolio</a></h5>
-                            <h5><a className="link onClick={this.handleClick.bind(this)}" onMouseEnter={this.fillUp.bind(this)} onMouseLeave={this.empty.bind(this)} href="#wrapper4">Get In Touch</a></h5>
+                            <h5><a className="link" onClick={this.handleClick.bind(this)} onMouseEnter={this.fillUp.bind(this)} onMouseLeave={this.empty.bind(this)} href="#wrapper4">Get In Touch</a></h5>
                         </div>
                         <div className="col s12 m6" id="col2">
                             
