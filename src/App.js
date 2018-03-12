@@ -10,7 +10,6 @@ import ToTop from './components/top';
 import Menu from './components/menu';
 import './icon/devicon/devicon.min.css';
 import './icon/mdi/css/materialdesignicons.min.css';
-import './css/materialize.min.css';
 import './css/style.min.css';
 import $ from 'jquery';
 import 'materialize-css';
