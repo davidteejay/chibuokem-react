@@ -47,7 +47,7 @@ export default class Menu extends Component {
         return (
             <div className="menu-container">
                 <div className="menu">
-                    <a href="#!" style={{display: 'none'}} data-activates="sideMenu" className="button-collapse"><i className="mdi mdi-sort-variant"></i></a>
+                    <a href="#!" data-activates="sideMenu" className="button-collapse"><i className="mdi mdi-sort-variant"></i></a>
                 </div>
                 <div className="side-nav valign-wrapper" id="sideMenu">
                     <div className="valign row">
