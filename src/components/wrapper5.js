@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import logo from '../images/logos/logo.jpg';
+import isaac from '../images/isaac.jpg'
 import $ from 'jquery';
 
 export default class Wrapper5 extends Component {
@@ -62,7 +63,17 @@ export default class Wrapper5 extends Component {
                     <div className="underline2 slideanim"></div>
                     <div className="slider">
                         <ul className="slides">
-                            <li style={testimonialStyle}>
+                            <li style={{ backgroundImage: 'url(' + isaac + ')', backgroundPosition: 'top center' }}>
+                                <div className="valign-wrapper">
+                                    <div className="valign caption left-align">
+                                        <p className="light white-text"><b>Chibuokem</b> is a developer with experience, passion and great skill set. A developer ready to work, learn and explore. He is a developer I would definitely like to have at close reach</p>
+                                        <br/>
+                                        <p className="referrer">Akinbosede Oluwatemilorun</p>
+                                        <p className="ref-title light">CEO, Rainbow Hub</p>
+                                    </div>
+                                </div>
+                            </li>
+                            {/* <li style={testimonialStyle}>
                                 <div className="valign-wrapper">
                                     <div className="valign caption left-align">
                                         <p className="light white-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum quia possimus blanditiis, odio facilis obcaecati, in molestiae! Ab, consequatur, doloribus.</p>
@@ -101,17 +112,7 @@ export default class Wrapper5 extends Component {
                                         <p className="ref-title light">CEO, Lorem ipsum dolor.</p>
                                     </div>
                                 </div>
-                            </li>
-                            <li style={testimonialStyle}>
-                                <div className="valign-wrapper">
-                                    <div className="valign caption left-align">
-                                        <p className="light white-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum quia possimus blanditiis, odio facilis obcaecati, in molestiae! Ab, consequatur, doloribus.</p>
-                                        <br/>
-                                        <p className="referrer">Lorem ipsum.</p>
-                                        <p className="ref-title light">CEO, Lorem ipsum dolor.</p>
-                                    </div>
-                                </div>
-                            </li>
+                            </li> */}
                         </ul>
                     </div>
                 </div>

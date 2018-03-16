@@ -94,6 +94,6 @@
 }
 
 .modal-overlay {    
-    @include background('../images/image4.jpg');
+    @include background($url: '../images/mainbg.jpg', $pos: top center);
     background-color: #fff;
 }

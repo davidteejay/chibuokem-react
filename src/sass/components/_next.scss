@@ -3,9 +3,9 @@
 .to-about {
     height: 33px;
     width: 21px;
-    border-radius: 8px;
-    border: 2px solid #333;
-    color: #333;
+    border-radius: 10px;
+    border: 2px solid #fff;
+    color: #fff;
     text-align: center;
     cursor: pointer;
     padding: 0;
@@ -17,12 +17,12 @@
     }
 
     .dot {
-        height: 5px;
-        width: 5px;
+        height: 3px;
+        width: 3px;
         border-radius: 50%;
-        background-color: #333;
+        background-color: #fff;
         display: inline-block;
-        @include abs-pos($top: 3px, $left: 6px);
+        @include abs-pos($top: 3px, $left: 7px);
         opacity: 0;
         animation: opacity-up-down 1.5s infinite;
     }

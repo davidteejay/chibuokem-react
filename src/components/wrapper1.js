@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import bg from '../images/image2.jpg';
 import $ from 'jquery';
 import 'materialize-css';
 
@@ -18,7 +17,7 @@ export default class Wrapper1 extends Component {
     
     render(){
         return (
-            <div className="wrapper1 parallax-container" id="wrapper1">
+            <div className="wrapper1" id="wrapper1">
                 <div className="row">
                     <div className="col m6 s12 hide-on-small-only"></div>
                     <div className="col m6 s12 valign-wrapper">
@@ -26,8 +25,9 @@ export default class Wrapper1 extends Component {
                             <h4>Hi, I'm</h4>
                             <h1 className="light">Chibuokem Onyekwelu</h1>
                             <p className="light">
-                                Nostrud labore aute exercitation dolor eiusmod ullamco incididunt sit ipsum sint sit qui. Voluptate ex fugiat Lorem ipsum. Velit anim pariatur officia dolore ex enim enim. Laborum eiusmod do adipisicing et ullamco esse excepteur excepteur tempor ex aliquip eu. Labore duis officia excepteur excepteur irure laborum incididunt labore tempor cupidatat cillum veniam dolor reprehenderit. <br/><br/>
-                                Nostrud fugiat officia aute eu culpa dolore reprehenderit in elit exercitation consectetur. Incididunt sit sint in aute cupidatat. Non mollit elit laboris adipisicing fugiat cillum ut ea nisi excepteur aute sint adipisicing labore. Sit sit enim exercitation ipsum proident.
+                                I'm a full-stack Web and Mobile app developer, sometimes my work includes traditional graphic design.
+                                <br/><br/>
+                                I currently work at <b>Elite Media Agency</b>, bringing infinite creativity to designs. When I'm not doing any of those, you can find me <b className="blue-text">playing a game</b> or <b className="blue-text">seeing a movie</b>
                             </p>
                             <div className="social">
                                 <a href="https://github.com/davidteejay" target="_blank" rel="noopener noreferrer" data-delay="50" data-tooltip="GitHub" className="btn-floating tooltipped z-depth-0 transparent center"><i className="mdi mdi-github-circle"></i></a>
@@ -41,7 +41,6 @@ export default class Wrapper1 extends Component {
                         </div>
                     </div>
                 </div>
-                <div className="parallax"><img src={bg} alt=""/></div>
             </div>
         )
     }
