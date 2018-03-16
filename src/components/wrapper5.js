@@ -73,16 +73,6 @@ export default class Wrapper5 extends Component {
                                     </div>
                                 </div>
                             </li>
-                            {/* <li style={testimonialStyle}>
-                                <div className="valign-wrapper">
-                                    <div className="valign caption left-align">
-                                        <p className="light white-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum quia possimus blanditiis, odio facilis obcaecati, in molestiae! Ab, consequatur, doloribus.</p>
-                                        <br/>
-                                        <p className="referrer">Lorem ipsum.</p>
-                                        <p className="ref-title light">CEO, Lorem ipsum dolor.</p>
-                                    </div>
-                                </div>
-                            </li>
                             <li style={testimonialStyle}>
                                 <div className="valign-wrapper">
                                     <div className="valign caption left-align">
@@ -93,26 +83,7 @@ export default class Wrapper5 extends Component {
                                     </div>
                                 </div>
                             </li>
-                            <li style={testimonialStyle}>
-                                <div className="valign-wrapper">
-                                    <div className="valign caption left-align">
-                                        <p className="light white-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum quia possimus blanditiis, odio facilis obcaecati, in molestiae! Ab, consequatur, doloribus.</p>
-                                        <br/>
-                                        <p className="referrer">Lorem ipsum.</p>
-                                        <p className="ref-title light">CEO, Lorem ipsum dolor.</p>
-                                    </div>
-                                </div>
-                            </li>
-                            <li style={testimonialStyle}>
-                                <div className="valign-wrapper">
-                                    <div className="valign caption left-align">
-                                        <p className="light white-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum quia possimus blanditiis, odio facilis obcaecati, in molestiae! Ab, consequatur, doloribus.</p>
-                                        <br/>
-                                        <p className="referrer">Lorem ipsum.</p>
-                                        <p className="ref-title light">CEO, Lorem ipsum dolor.</p>
-                                    </div>
-                                </div>
-                            </li> */}
+                            {/* / */}
                         </ul>
                     </div>
                 </div>
