@@ -19,8 +19,8 @@ export default class Wrapper1 extends Component {
         return (
             <div className="wrapper1" id="wrapper1">
                 <div className="row">
-                    <div className="col m6 s12 hide-on-small-only"></div>
-                    <div className="col m6 s12 valign-wrapper">
+                    <div className="col l6 m12 hide-on-med-and-down"></div>
+                    <div className="col l6 m12 valign-wrapper">
                         <div className="content valign">
                             <h4>Hi, I'm</h4>
                             <h1 className="light">Chibuokem Onyekwelu</h1>

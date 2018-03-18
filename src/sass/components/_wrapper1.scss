@@ -18,7 +18,7 @@
         width: 100%;
         margin: 0;
 
-        .hide-on-small-only {
+        .hide-on-med-and-down {
             @include background('../images/mainbg.jpg', top center);
             height: 100%;
         }
@@ -27,7 +27,7 @@
             background-color: #09090b;
             height: inherit;
 
-            @include mQ(600px){
+            @include mQ(992px){
                 background-color: rgba(#000, .6);
             }
             
