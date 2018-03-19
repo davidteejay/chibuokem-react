@@ -16,6 +16,9 @@ export default class Wrapper1 extends Component {
     }
     
     render(){
+        const accent = {
+            color: '#009688'
+        }
         return (
             <div className="wrapper1" id="wrapper1">
                 <div className="row">
@@ -27,7 +30,7 @@ export default class Wrapper1 extends Component {
                             <p className="light">
                                 I'm a full-stack Web and Mobile app developer, sometimes my work includes traditional graphic design.
                                 <br/><br/>
-                                I currently work at <b>Elite Media Agency</b>, bringing infinite creativity to designs. When I'm not doing any of those, you can find me <b className="blue-text">playing a game</b> or <b className="blue-text">seeing a movie</b>
+                                I currently work at <b>Elite Media Agency</b>, bringing infinite creativity to designs. When I'm not doing any of those, you can find me <b style={accent}>playing a game</b> or <b style={accent}>seeing a movie</b>
                             </p>
                             <div className="social">
                                 <a href="https://github.com/davidteejay" target="_blank" rel="noopener noreferrer" data-delay="50" data-tooltip="GitHub" className="btn-floating tooltipped z-depth-0 transparent center"><i className="mdi mdi-github-circle"></i></a>

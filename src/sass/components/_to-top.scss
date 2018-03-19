@@ -2,24 +2,19 @@
 @import "../utils/_anims";
 
 .to-top {
-    height: 50px;
-    width: 50px;
+    height: 40px;
+    width: 40px;
     background-color: #009688;
     border-radius: 50%;
-    line-height: 50px;
+    line-height: 40px;
     text-align: center;
     @include fixed-pos($bottom: 20px, $right: 20px, $zIndex: 110);
-    opacity: .4;
     transition: all .5s;
 
-    &:hover {
-        opacity: .8;
-    }
-
     .mdi::before {
-        height: 50px;
-        line-height: 50px;
-        font-size: 24px;
+        height: 40px;
+        line-height: 40px;
+        font-size: 22px;
         color: #fff !important;
     }
 }

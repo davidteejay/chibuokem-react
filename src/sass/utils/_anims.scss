@@ -142,11 +142,11 @@
 // }
 
 .to-top-slideup {
-    animation: to-top-slide-up 1s;
+    animation: to-top-slide-up .5s;
     animation-fill-mode: forwards;
 }
 
 .to-top-slidedown {
-    animation: to-top-slide-down 1s;
+    animation: to-top-slide-down .5s;
     animation-fill-mode: forwards;
 }

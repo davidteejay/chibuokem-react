@@ -19,12 +19,12 @@
             width: 100%;
             margin-bottom: 0;
 			padding: 50px 35px;
-            background-color: rgba(#000, 1);
-            color: #fff !important;
+            background-color: rgba(#fff, 1);
+            color: #000 !important;
 
             *::selection {
-                background-color: #fff;
-                color: #555;
+                background-color: #555;
+                color: #fff;
             }
 
             h1 {
@@ -38,7 +38,6 @@
 
             .underline {
                 margin-top: 0 !important;
-                background-color: #fff !important;
             }
             
             .col {
@@ -50,12 +49,13 @@
                 }
 
                 h5 {
-                    color: #fff;
+                    color: #000;
                     font-weight: 700;
                 }
                 
                 img {
-                    height: 75px;
+                    height: 100px;
+                    width: auto;
                 }
             }
         }

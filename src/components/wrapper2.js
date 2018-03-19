@@ -9,7 +9,7 @@ export default class Wrapper2 extends Component {
             <div className="wrapper2" id="wrapper2">
                 <div className="wrapper">
                     <div className="things-do row" id="things-do">
-                        <h1 className="center slideanim white-text">WHAT I DO</h1>
+                        <h1 className="center slideanim">WHAT I DO</h1>
                         <div className="underline slideanim"></div>
                         <div className="col m4 s12 slideanim">
                             <img src={webdesign} alt=""/>

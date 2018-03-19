@@ -16,14 +16,14 @@ export default class Wrapper3 extends Component {
                         <h5 className="light center">
                             ASSOCIATION FOR COMPUTING AND MACHINERY: FUTA CHAPTER
                         </h5>
-                        <a href="//futa.acm.org" target="_blank" rel="noopener noreferrer">VIEW PROJECT</a>
+                        <a href="//futa.acm.org" target="_blank" rel="noopener noreferrer" className="hoverable">VIEW PROJECT</a>
                     </div>
                     <div className="col s12 m6 center">
                         <img src={alumni} alt="FUTA Alumni's Website"/>
                         <h5 className="light center">
                             FUTA ALUMNI ASSOCIATION WORLDWIDE 
                         </h5>
-                        <a href="//futaalumniworldwide.org" target="_blank" rel="noopener noreferrer">VIEW PROJECT</a>
+                        <a href="//futaalumniworldwide.org" target="_blank" rel="noopener noreferrer" className="hoverable">VIEW PROJECT</a>
                     </div>
                 </div>
                 <div className="row">
@@ -32,14 +32,14 @@ export default class Wrapper3 extends Component {
                         <h5 className="light center">
                             BEST SOLUTION BOOKS
                         </h5>
-                        <a href="//bestsolutionbooks.com" target="_blank" rel="noopener noreferrer">VIEW PROJECT</a>
+                        <a href="//bestsolutionbooks.com" target="_blank" rel="noopener noreferrer" className="hoverable">VIEW PROJECT</a>
                     </div>
                     <div className="col s12 m6 center">
                         <img src={alawhyte} alt="Alawhyte's Website"/>
                         <h5 className="light center">
                             ALAWHYTE
                         </h5>
-                        <a href="//alawhyte.com" target="_blank" rel="noopener noreferrer">VIEW PROJECT</a>
+                        <a href="//alawhyte.com" target="_blank" rel="noopener noreferrer" className="hoverable">VIEW PROJECT</a>
                     </div>
                 </div>
             </div>

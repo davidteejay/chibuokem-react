@@ -2,10 +2,11 @@
     padding: 30px 35px;
 	height: fit-content;
     width: 100%;
-    background-color: #fff;
+    background-color: #f0f0f0;
     
     h4 {
         margin: 0;
+        color: #000;
 
         @media screen and (max-width: 600px){
             font-size: 26px;
@@ -13,6 +14,7 @@
     }
 
 	.row {
+        margin: 0;
         margin-top: 50px;
         
         .col {
@@ -21,6 +23,10 @@
                 margin: 0 auto;
                 height: auto;
             }
+        }
+
+        h5 {
+            color: #000;
         }
 
         a {

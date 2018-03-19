@@ -1,7 +1,7 @@
 .wrapper5 {
     .skills {
         padding: 50px 100px;
-        background-color: #f0f0f0;
+        background-color: #fff;
 
         @include mQ(992px){
             padding: 30px;
@@ -150,7 +150,7 @@
             top: 15px;
             bottom: 50px;
         }
-        background-color: #fff;		
+        background-color: #f0f0f0;		
         
         h4 {
             margin-top: 30px;
