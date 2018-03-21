@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import logo from '../images/logos/logo.jpg';
-import isaac from '../images/isaac.jpg'
+import isaac from '../images/isaac.jpg';
+import paul from '../images/paul.jpg';
 import $ from 'jquery';
 
 export default class Wrapper5 extends Component {
@@ -66,20 +67,20 @@ export default class Wrapper5 extends Component {
                             <li style={{ backgroundImage: 'url(' + isaac + ')', backgroundPosition: 'top center' }}>
                                 <div className="valign-wrapper">
                                     <div className="valign caption left-align">
-                                        <p className="light white-text" style={{ textAlign: 'justify' }}><b>Chibuokem</b> is a developer with experience, passion and great skill set. A developer ready to work, learn and explore. He is a developer I would definitely like to have at close reach</p>
+                                        <p className="light white-text" style={{ textAlign: 'justify' }}><b>Chibuokem</b> is a developer with experience, passion and great skill set. A developer ready to work, learn and explore. He is a developer I would definitely like to have at close reach.</p>
                                         <br/>
-                                        <p className="referrer">Akinbosede Oluwatemilorun</p>
-                                        <p className="ref-title light">CEO, Rainbow Hub</p>
+                                        <p className="referrer">Akinbosede Oluwatemilorun Isaac</p>
+                                        <p className="ref-title light">CEO, Rainbow Hub.</p>
                                     </div>
                                 </div>
                             </li>
-                            <li style={testimonialStyle}>
+                            <li style={{ backgroundImage: 'url(' + paul + ')', backgroundPosition: 'top center' }}>
                                 <div className="valign-wrapper">
                                     <div className="valign caption left-align">
-                                        <p className="light white-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum quia possimus blanditiis, odio facilis obcaecati, in molestiae! Ab, consequatur, doloribus.</p>
+                                        <p className="light white-text" style={{ textAlign: 'justify' }}>>I have known <b>Chibuokem</b> well over two years and have seen in him an avid learner obsessed with self development. He has worked with me on a handful of projects and shows great promise, he gives his best shot all the time and delivers within the alloted timeframe.</p>
                                         <br/>
-                                        <p className="referrer">Lorem ipsum.</p>
-                                        <p className="ref-title light">CEO, Lorem ipsum dolor.</p>
+                                        <p className="referrer">Banjo Mofesola Paul</p>
+                                        <p className="ref-title light">CTO & Co-founder, Planet NEST.</p>
                                     </div>
                                 </div>
                             </li>
