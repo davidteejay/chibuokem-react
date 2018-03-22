@@ -77,7 +77,7 @@ export default class Wrapper5 extends Component {
                             <li style={{ backgroundImage: 'url(' + paul + ')', backgroundPosition: 'top center' }}>
                                 <div className="valign-wrapper">
                                     <div className="valign caption left-align">
-                                        <p className="light white-text" style={{ textAlign: 'justify' }}>>I have known <b>Chibuokem</b> well over two years and have seen in him an avid learner obsessed with self development. He has worked with me on a handful of projects and shows great promise, he gives his best shot all the time and delivers within the alloted timeframe.</p>
+                                        <p className="light white-text" style={{ textAlign: 'justify' }}>I have known <b>Chibuokem</b> well over two years and have seen in him an avid learner obsessed with self development. He has worked with me on a handful of projects and shows great promise, he gives his best shot all the time and delivers within the alloted timeframe.</p>
                                         <br/>
                                         <p className="referrer">Banjo Mofesola Paul</p>
                                         <p className="ref-title light">CTO & Co-founder, Planet NEST.</p>
