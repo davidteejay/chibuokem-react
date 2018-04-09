@@ -10,7 +10,7 @@
 
     @include mQ(992px){
         height: auto;
-        @include background('../images/mainbg.jpg', top center);
+        @include background('https://res.cloudinary.com/chibuokem/image/upload/v1522049902/mainbg.jpg', top center);
     }
     
     .row {
@@ -19,7 +19,7 @@
         margin: 0;
 
         .hide-on-med-and-down {
-            @include background('../images/mainbg.jpg', top center);
+            @include background('https://res.cloudinary.com/chibuokem/image/upload/v1522049902/mainbg.jpg', top center);
             height: 100%;
         }
         

@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import acm from '../images/acm.png';
- import alawhyte from '../images/alawhyte.png';
-import bsb from '../images/bsb.png';
-import alumni from '../images/alumni.png';
+// import acm from '../images/acm.png';
+//  import alawhyte from '../images/alawhyte.png';
+// import bsb from '../images/bsb.png';
+// import alumni from '../images/alumni.png';
 
 export default class Wrapper3 extends Component {
     render(){
@@ -12,14 +12,14 @@ export default class Wrapper3 extends Component {
                 <div className="underline2 slideanim"></div>
                 <div className="row" id="portfolio">
                     <div className="col s12 m6 center">
-                        <img src={acm} alt="FUTA ACM's Website"/>
+                        <img src="https://res.cloudinary.com/chibuokem/image/upload/v1522049900/acm.png" alt="FUTA ACM's Website"/>
                         <h5 className="light center">
                             ASSOCIATION FOR COMPUTING AND MACHINERY: FUTA CHAPTER
                         </h5>
                         <a href="//futa.acm.org" target="_blank" rel="noopener noreferrer" className="hoverable">VIEW PROJECT</a>
                     </div>
                     <div className="col s12 m6 center">
-                        <img src={alumni} alt="FUTA Alumni's Website"/>
+                        <img src="https://res.cloudinary.com/chibuokem/image/upload/v1522049902/alumni.png" alt="FUTA Alumni's Website"/>
                         <h5 className="light center">
                             FUTA ALUMNI ASSOCIATION WORLDWIDE 
                         </h5>
@@ -28,14 +28,14 @@ export default class Wrapper3 extends Component {
                 </div>
                 <div className="row">
                     <div className="col s12 m6 center">
-                        <img src={bsb} alt="Best Solution Book's Website"/>
+                        <img src="https://res.cloudinary.com/chibuokem/image/upload/v1522049901/bsb.png" alt="Best Solution Book's Website"/>
                         <h5 className="light center">
                             BEST SOLUTION BOOKS
                         </h5>
                         <a href="//bestsolutionbooks.com" target="_blank" rel="noopener noreferrer" className="hoverable">VIEW PROJECT</a>
                     </div>
                     <div className="col s12 m6 center">
-                        <img src={alawhyte} alt="Alawhyte's Website"/>
+                        <img src="https://res.cloudinary.com/chibuokem/image/upload/v1522049902/alawhyte.png" alt="Alawhyte's Website"/>
                         <h5 className="light center">
                             ALAWHYTE
                         </h5>

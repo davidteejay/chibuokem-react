@@ -13,10 +13,6 @@ export default class Wrapper5 extends Component {
     }
 
     render(){
-        let testimonialStyle = {
-            backgroundImage: 'url(' + logo + ')'
-        }
-
         return (
             <div className="wrapper5" id="wrapper5">
                 <div className="skills row center" id="skills">
@@ -64,17 +60,7 @@ export default class Wrapper5 extends Component {
                     <div className="underline2 slideanim"></div>
                     <div className="slider">
                         <ul className="slides">
-                            <li style={{ backgroundImage: 'url(' + isaac + ')', backgroundPosition: 'top center' }}>
-                                <div className="valign-wrapper">
-                                    <div className="valign caption left-align">
-                                        <p className="light white-text" style={{ textAlign: 'justify' }}><b>Chibuokem</b> is a developer with experience, passion and great skill set. A developer ready to work, learn and explore. He is a developer I would definitely like to have at close reach.</p>
-                                        <br/>
-                                        <p className="referrer">Akinbosede Oluwatemilorun Isaac</p>
-                                        <p className="ref-title light">CEO, Rainbow Hub.</p>
-                                    </div>
-                                </div>
-                            </li>
-                            <li style={{ backgroundImage: 'url(' + paul + ')', backgroundPosition: 'top center' }}>
+                            <li style={{ backgroundImage: 'url(https://res.cloudinary.com/chibuokem/image/upload/v1522049902/paul.jpg)', backgroundPosition: 'top center' }}>
                                 <div className="valign-wrapper">
                                     <div className="valign caption left-align">
                                         <p className="light white-text" style={{ textAlign: 'justify' }}>I have known <b>Chibuokem</b> well over two years and have seen in him an avid learner obsessed with self development. He has worked with me on a handful of projects and shows great promise, he gives his best shot all the time and delivers within the alloted timeframe.</p>
@@ -84,7 +70,16 @@ export default class Wrapper5 extends Component {
                                     </div>
                                 </div>
                             </li>
-                            {/* / */}
+                            <li style={{ backgroundImage: 'url(https://res.cloudinary.com/chibuokem/image/upload/v1522049899/isaac.jpg)', backgroundPosition: 'top center' }}>
+                                <div className="valign-wrapper">
+                                    <div className="valign caption left-align">
+                                        <p className="light white-text" style={{ textAlign: 'justify' }}><b>Chibuokem</b> is a developer with experience, passion and great skill set. A developer ready to work, learn and explore. He is a developer I would definitely like to have at close reach.</p>
+                                        <br/>
+                                        <p className="referrer">Akinbosede Oluwatemilorun Isaac</p>
+                                        <p className="ref-title light">CEO, Rainbow Hub.</p>
+                                    </div>
+                                </div>
+                            </li>
                         </ul>
                     </div>
                 </div>
