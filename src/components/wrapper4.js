@@ -22,7 +22,7 @@ export default class Wrapper4 extends Component {
             display: 'none'
         }
         return (
-            <div className="wrapper4" id="wrapper4">
+            <div className="wrapper4 page" id="wrapper4">
                 <div className="cover">
                     <div className="row">
                         <h3 className="light center slideanim">GET IN TOUCH</h3>

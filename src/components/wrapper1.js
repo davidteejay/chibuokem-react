@@ -7,20 +7,12 @@ export default class Wrapper1 extends Component {
         $('.parallax').parallax();
     }
     
-    handleClick(e){
-        e.preventDefault();
-        
-        $('html, body').animate({
-            scrollTop: $("#wrapper2").offset().top
-        }, 1000, "easeInOutExpo");
-    }
-    
     render(){
         const accent = {
             color: '#009688'
         }
         return (
-            <div className="wrapper1" id="wrapper1">
+            <div className="wrapper1 page" id="wrapper1">
                 <div className="row">
                     <div className="col l6 m12 hide-on-med-and-down">
                     </div>
@@ -31,7 +23,7 @@ export default class Wrapper1 extends Component {
                             <p className="light">
                                 I'm a full-stack Web and Mobile app developer, sometimes my work includes traditional graphic design.
                                 <br/><br/>
-                                I currently work at <b>Elite Media Agency</b>, bringing infinite creativity to designs. When I'm not doing any of those, you can find me <b style={accent}>playing a game</b> or <b style={accent}>seeing a movie</b>
+                                I currently work at <span style={{fontWeight: 300}}>Neptunn</span>, bringing infinite creativity to designs. When I'm not doing any of those, you can find me <span style={{...accent, fontWeight: 300}}>playing the  keyboard</span> or <span style={{...accent, fontWeight: 300}}>seeing a movie</span>
                             </p>
                             <div className="social">
                                 <a href="https://github.com/davidteejay" target="_blank" rel="noopener noreferrer" data-delay="50" data-tooltip="GitHub" className="btn-floating tooltipped z-depth-0 transparent center"><i className="mdi mdi-github-circle"></i></a>
@@ -41,7 +33,6 @@ export default class Wrapper1 extends Component {
                                 <a href="https://twitter.com/DavidTeejayC" target="_blank" rel="noopener noreferrer" data-delay="50" data-tooltip="Twitter" className="btn-floating tooltipped z-depth-0 transparent center"><i className="mdi mdi-twitter"></i></a>
                                 <a href="https://plus.google.com/112517983973843716765" target="_blank" rel="noopener noreferrer" data-delay="50" data-tooltip="Google+" className="btn-floating tooltipped z-depth-0 transparent center"><i className="mdi mdi-google-plus"></i></a>
                             </div>
-                            <div onClick={this.handleClick.bind(this)} className="to-about next center"><span className="dot"></span></div>
                         </div>
                     </div>
                 </div>

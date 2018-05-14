@@ -1,7 +1,4 @@
 import React, { Component } from 'react';
-import logo from '../images/logos/logo.jpg';
-import isaac from '../images/isaac.jpg';
-import paul from '../images/paul.jpg';
 import $ from 'jquery';
 
 export default class Wrapper5 extends Component {
@@ -14,47 +11,7 @@ export default class Wrapper5 extends Component {
 
     render(){
         return (
-            <div className="wrapper5" id="wrapper5">
-                <div className="skills row center" id="skills">
-                    <h2>HERE ARE A FEW OF MY SKILLS</h2>
-                    <div className="underline slideanim"></div>
-                    <div className="col s6 m4 center">
-                        <div className="icon html">
-                            <i className="devicon-html5-plain colored"></i>
-                            <p className="light">HTML5</p>
-                        </div>
-                    </div>
-                    <div className="col s6 m4 center">
-                        <div className="icon sass">
-                            <i className="devicon-sass-plain colored"></i>
-                            <p className="light">SASS, CSS3</p>
-                        </div>
-                    </div>
-                    <div className="col s6 m4 center">
-                        <div className="icon js">
-                            <i className="devicon-javascript-plain colored"></i>
-                            <p className="light">ReactJS</p>
-                        </div>
-                    </div>
-                    <div className="col s6 m4 center">
-                        <div className="icon php">
-                            <i className="devicon-php-plain colored"></i>
-                            <p className="light">PHP, MySQL</p>
-                        </div>
-                    </div>
-                    <div className="col s6 m4 center">
-                        <div className="icon mongo">
-                            <i className="devicon-mongodb-plain colored"></i>
-                            <p className="light">MongoDB</p>
-                        </div>
-                    </div>
-                    <div className="col s6 m4 center">
-                        <div className="icon photoshop">
-                            <i className="devicon-photoshop-plain colored"></i>
-                            <p className="light">Adobe Photoshop</p>
-                        </div>
-                    </div>                   
-                </div>
+            <div className="wrapper5 page" id="wrapper5">
                 <div className="testimonials" id="testimonials">
                     <h4 className="light center">HERE'S WHAT PEOPLE ARE SAYING ABOUT ME:</h4>
                     <div className="underline2 slideanim"></div>
