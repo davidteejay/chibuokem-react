@@ -4,7 +4,7 @@
     .menu {
         height: 40px;
         width: 40px;
-        background-color: #09090b;
+        background-color: #080808;
         border-radius: 50%;
         @include fixed-pos($top: 20px, $right: 20px, $zIndex: 110000000000000000);
         line-height: 40px;

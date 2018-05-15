@@ -30,12 +30,12 @@
         }
         
         .valign-wrapper {
-            background-color: #09090b;
+            background-color: #080808;
             height: 100%;
             min-height: fit-content;
 
             @include mQ(992px){
-                background-color: rgba(#09090b, .6);
+                background-color: rgba(#080808, .6);
             }
             
             .valign {
@@ -116,8 +116,4 @@
             }
         }
     }
-}
-
-.material-tooltip {
-    // top: 0 !important;
 }
