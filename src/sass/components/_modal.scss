@@ -94,6 +94,6 @@
 }
 
 .modal-overlay {    
-    @include background($url: 'https://res.cloudinary.com/chibuokem/image/upload/v1522049902/mainbg.jpg', $pos: top center);
+    @include background($url: 'https://cdn.rawgit.com/davidteejay/chibuokem/master/src/images/mainbg.jpg', $pos: top center);
     background-color: #fff;
 }

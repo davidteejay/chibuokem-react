@@ -1,7 +1,7 @@
 .wrapper4 {
     width: 100%;
     height: auto;
-    @include background($url: 'https://res.cloudinary.com/chibuokem/image/upload/v1522049902/mainbg.jpg', $pos: top center, $attach: fixed);
+    @include background($url: 'https://cdn.rawgit.com/davidteejay/chibuokem/master/src/images/mainbg.jpg', $pos: center, $attach: fixed);
 
     .cover {
         width: 100%;

@@ -12,7 +12,7 @@
 
     @include mQ(992px){
         height: auto;
-        @include background('https://res.cloudinary.com/chibuokem/image/upload/v1522049902/mainbg.jpg', top center);
+        @include background('https://cdn.rawgit.com/davidteejay/chibuokem/master/src/images/mainbg.jpg', top center);
     }
     
     .row {
@@ -25,7 +25,7 @@
         }
 
         .hide-on-med-and-down {
-            @include background('https://res.cloudinary.com/chibuokem/image/upload/v1522049902/mainbg.jpg', top center);
+            @include background('https://cdn.rawgit.com/davidteejay/chibuokem/master/src/images/mainbg.jpg', top center);
             height: 100%;
         }
         
