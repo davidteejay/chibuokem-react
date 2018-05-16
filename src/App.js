@@ -7,7 +7,6 @@ import Wrapper5 from './components/wrapper5';
 import Modal from './components/modal';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Menu from './components/menu';
-import 'https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css';
 import './icon/mdi/css/materialdesignicons.min.css';
 import './css/materialize.min.css';
 import './css/style.min.css';

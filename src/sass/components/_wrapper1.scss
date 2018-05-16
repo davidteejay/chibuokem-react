@@ -18,11 +18,8 @@
     .row {
         height: 100%;
         width: 100%;
+        min-height: fit-content !important;
         margin: 0 !important;
-
-        &:after {
-            display: none;
-        }
 
         .hide-on-med-and-down {
             @include background('https://cdn.rawgit.com/davidteejay/chibuokem/master/src/images/mainbg.jpg', top center);

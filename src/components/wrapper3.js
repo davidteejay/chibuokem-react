@@ -8,14 +8,14 @@ export default class Wrapper3 extends Component {
                 <div className="underline2 slideanim"></div>
                 <div className="row" id="portfolio">
                     <div className="col s12 m6 center">
-                        <img src="https://res.cloudinary.com/chibuokem/image/upload/v1522049900/acm.png" alt="FUTA ACM's Website"/>
+                        <img src="https://cdn.rawgit.com/davidteejay/chibuokem/master/src/images/acm.png" alt="FUTA ACM's Website"/>
                         <h5 className="light center">
                             ASSOCIATION FOR COMPUTING AND MACHINERY: FUTA CHAPTER
                         </h5>
                         <a href="//futa.acm.org" target="_blank" rel="noopener noreferrer">VIEW PROJECT</a>
                     </div>
                     <div className="col s12 m6 center">
-                        <img src="https://res.cloudinary.com/chibuokem/image/upload/v1522049902/alumni.png" alt="FUTA Alumni's Website"/>
+                        <img src="https://cdn.rawgit.com/davidteejay/chibuokem/master/src/images/alumni.png" alt="FUTA Alumni's Website"/>
                         <h5 className="light center">
                             FUTA ALUMNI ASSOCIATION WORLDWIDE 
                         </h5>
@@ -24,14 +24,14 @@ export default class Wrapper3 extends Component {
                 </div>
                 <div className="row">
                     <div className="col s12 m6 center">
-                        <img src="https://res.cloudinary.com/chibuokem/image/upload/v1522049901/bsb.png" alt="Best Solution Book's Website"/>
+                        <img src="https://cdn.rawgit.com/davidteejay/chibuokem/master/src/images/bsb.png" alt="Best Solution Book's Website"/>
                         <h5 className="light center">
                             BEST SOLUTION BOOKS
                         </h5>
                         <a href="//bestsolutionbooks.com" target="_blank" rel="noopener noreferrer">VIEW PROJECT</a>
                     </div>
                     <div className="col s12 m6 center">
-                        <img src="https://res.cloudinary.com/chibuokem/image/upload/v1522049902/alawhyte.png" alt="Alawhyte's Website"/>
+                        <img src="https://cdn.rawgit.com/davidteejay/chibuokem/master/src/images/alawhyte.png" alt="Alawhyte's Website"/>
                         <h5 className="light center">
                             ALAWHYTE
                         </h5>
