@@ -8,7 +8,7 @@ export default class Wrapper3 extends Component {
                 <h4 className="slideanim center light">HERE ARE A FEW OF THE PROJECTS I'VE WORKED ON:</h4>
                 <div className="underline2 slideanim"></div>
                 <div className="row" id="portfolio">
-                    <div className="col s12 m6 center">
+                    <div className="col s12 m4 center">
                         <img src="https://cdn.rawgit.com/davidteejay/chibuokem/master/src/images/cpl.png" alt="Christ Praise Chapel Website"/>
                         <a className="content" href="//thecplchapel.org.ng" target="_blank" rel="noopener noreferrer">
                             <div style={{ width: '100%' }}>
@@ -19,7 +19,7 @@ export default class Wrapper3 extends Component {
                             </div>
                         </a>
                     </div>
-                    <div className="col s12 m6 center">
+                    <div className="col s12 m4 center">
                         <img src="https://cdn.rawgit.com/davidteejay/chibuokem/master/src/images/incycle.png" alt="Incycle"/>
                         <a className="content" href="//incycle.com.ng" target="_blank" rel="noopener noreferrer">
                             <div style={{ width: '100%' }}>
@@ -30,7 +30,7 @@ export default class Wrapper3 extends Component {
                             </div>
                         </a>
                     </div>
-                    <div className="col s12 m6 center">
+                    <div className="col s12 m4 center">
                         <img src="https://cdn.rawgit.com/davidteejay/chibuokem/master/src/images/acm.png" alt="FUTA ACM's Website"/>
                         <a className="content" href="//futa.acm.org" target="_blank" rel="noopener noreferrer">
                             <div style={{ width: '100%' }}>
@@ -41,7 +41,7 @@ export default class Wrapper3 extends Component {
                             </div>
                         </a>
                     </div>
-                    <div className="col s12 m6 center">
+                    <div className="col s12 m4 center">
                         <img src="https://cdn.rawgit.com/davidteejay/chibuokem/master/src/images/alumni.png" alt="FUTA Alumni's Website"/>
                         <a className="content" href="//futaalumniworldwide.org" target="_blank" rel="noopener noreferrer">
                             <div style={{ width: '100%' }}>
@@ -54,7 +54,7 @@ export default class Wrapper3 extends Component {
                     </div>
                 </div>
                 <div className="row">
-                    <div className="col s12 m6 center">
+                    <div className="col s12 m4 center">
                         <img src="https://cdn.rawgit.com/davidteejay/chibuokem/master/src/images/bsb.png" alt="Best Solution Book's Website"/>
                         <a className="content" href="//bestsolutionbooks.com" target="_blank" rel="noopener noreferrer">
                             <div style={{ width: '100%' }}>
@@ -65,7 +65,7 @@ export default class Wrapper3 extends Component {
                             </div>
                         </a>
                     </div>
-                    <div className="col s12 m6 center">
+                    <div className="col s12 m4 center">
                         <img src="https://cdn.rawgit.com/davidteejay/chibuokem/master/src/images/alawhyte.png" alt="Alawhyte's Website"/>
                         <a className="content" href="//alawhyte.com" target="_blank" rel="noopener noreferrer">
                             <div style={{ width: '100%' }}>
