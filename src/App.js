@@ -1,17 +1,20 @@
 import React, { Component } from 'react';
-import Wrapper1 from './components/wrapper1';
-import Wrapper2 from './components/wrapper2';
-import Wrapper3 from './components/wrapper3';
-import Wrapper4 from './components/wrapper4';
-import Wrapper5 from './components/wrapper5';
-import Modal from './components/modal';
+import asyncComponent from './asyncComponent';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import createBrowserHistory from 'history/createBrowserHistory';
 import Menu from './components/menu';
 import './icon/mdi/css/materialdesignicons.min.css';
 import './css/materialize.min.css';
 import './css/style.min.css';
 import $ from 'jquery';
 import 'materialize-css';
+
+const Wrapper1 = asyncComponent(() => import('./components/wrapper1').then(module => module.default))
+const Wrapper2 = asyncComponent(() => import('./components/wrapper2').then(module => module.default))
+const Wrapper3 = asyncComponent(() => import('./components/wrapper3').then(module => module.default))
+const Wrapper4 = asyncComponent(() => import('./components/wrapper4').then(module => module.default))
+const Wrapper5 = asyncComponent(() => import('./components/wrapper5').then(module => module.default))
+const Modal = asyncComponent(() => import('./components/modal').then(module => module.default))
 
 export default class App extends Component {
     componentDidMount(){
@@ -31,7 +34,7 @@ export default class App extends Component {
     }
     render(){
         return (
-            <Router>
+            <Router history={createBrowserHistory()}>
                 <div className="wrapper">
                     <Modal/>
                     <Menu/>
