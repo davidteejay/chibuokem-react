@@ -2,11 +2,19 @@
     padding: 30px 35px;
 	height: fit-content;
     width: 100%;
-    background-color: #f0f0f0;
+    background-color: transparent;
+    @include abs-pos($zIndex: 5);
+
+    .particles-js {
+        @include fixed-pos($top: 00, $left: 0, $zIndex: -1);
+        height: 100%;
+        width: 100vw;
+        background-color: #080808;
+    }
     
     h4 {
         margin: 0;
-        color: #000;
+        color: #fff;
 
         @include mQ(600px){
             font-size: 26px;
@@ -15,101 +23,55 @@
 
 	.row {
         margin: 0;
+        background-color: transparent;
 
         &#portfolio{
             margin-top: 50px;
         }
         
         .col {
-            @include rel-pos();
-            padding: 20px 40px;
+            padding: 40px;
             min-height: auto;
 
+            @include mQ(992px){
+                padding: 20px;
+            }
+
             img {
-                width: 100%;
+                width: 90%;
                 margin: 0 auto;
                 height: auto;
             }
 
-            .content {
-                @include abs-pos($top: 10px, $left: 10px, $right: 10px, $bottom: 10px, $zIndex: 1);
-                background-color: rgba(#080808, .8);
-                content: '';
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                opacity: 0;
+            h5 {
+                color: #fff;
+                width: 100%;
+                margin-top: 0;
+                font-size: 17px;
+            }
+    
+            a {
+                display: block;
+                text-align: center;
+                width: 150px;
+                height: 50px;
+                line-height: 50px;
+                background-color: transparent;
+                border: 1px solid #fff;
+                border-radius: 25px;
+                color: #fff;
+                font-weight: 300;
                 transition: all 1s;
-                padding: 20px;
-
-                h5 {
-                    color: #fff;
-                    width: 100%;
-                    margin-top: 0;
-                    opacity: 0;
-                    transform: translateY(-200px);
-                    transition: all 1s;
-                    font-size: 22px;
-                }
-        
-                a {
-                    display: block;
-                    text-align: center;
-                    width: 150px;
-                    height: 50px;
-                    line-height: 50px;
-                    background-color: transparent;
-                    border: 1px solid #fff;
-                    border-radius: 25px;
-                    color: #fff;
-                    font-weight: 300;
-                    transition: all 1s;
-                    margin: auto;
-                    margin-top: 25px;
-                    opacity: 0;
-                    transform: translateY(200px);
-        
-                    &:hover {
-                        width: 165px;
-                        color: #fff;
-                        background-color: #009688;
-                        border-color: #009688;
-                    }
-                }
-
+                margin: auto;
+                margin-top: 25px;
+    
                 &:hover {
-                    opacity: 1;
-
-                    h5 {
-                        opacity: 1;
-                        transform: translateY(0);
-                    }
-
-                    a {
-                        opacity: 1;
-                        transform: translateY(0);
-                    }
-                }
-
-                @include mQ(992px){
-                    opacity: 1;
-                    background-color: rgba(#000, .6);
-
-                    h5 {
-                        opacity: 1;
-                        transform: translateY(0);
-                        font-size: 18px;
-                    }
-
-                    a {
-                        opacity: 1;
-                        transform: translateY(0);
-                        width: 130px;
-                        height: 40px;
-                        line-height: 40px;
-                    }
+                    width: 165px;
+                    color: #fff;
+                    background-color: #009688;
+                    border-color: #009688;
                 }
             }
-        }
-	}
+            }
+    }
 }
