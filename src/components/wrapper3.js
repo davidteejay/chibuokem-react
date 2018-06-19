@@ -72,11 +72,11 @@ const particleParams = {
                 "color": "#000000"
             },
             "polygon": {
-                "nb_sides": 5
+                "nb_sides": 3
             },
         },
         "opacity": {
-            "value": 0.5,
+            "value": 0.3,
             "random": false,
             "anim": {
                 "enable": false,
@@ -99,7 +99,7 @@ const particleParams = {
             "enable": true,
             "distance": 100,
             "color": "#ffffff",
-            "opacity": 0.5,
+            "opacity": 0.3,
             "width": 1
         },
         "move": {
