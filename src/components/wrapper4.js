@@ -46,7 +46,7 @@ export default class Wrapper4 extends Component {
                                     <label htmlFor="message">Message</label>
                                     <textarea name="message" id="message" className="materialize-textarea" required></textarea>
                                     <input type="text" name="_gotcha" style={style} />
-                                    <input type="hidden" name="_next" value="http://chibuokem.herokuapp.com/#thanks" />
+                                    <input type="hidden" name="_next" value="http://chibuokem.me/#thanks" />
                                 </div>
                                 <div className="input-field col s12 slideanim3">
                                     <button type="submit" className="btn teal darken-2 z-depth-0 waves-effect waves-light">SEND</button>

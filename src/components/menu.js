@@ -46,6 +46,7 @@ export default class Menu extends Component {
                             <h5><a className="link" onMouseEnter={this.fillUp.bind(this)} onMouseLeave={this.empty.bind(this)} href="/skills">Things I Do</a></h5>
                             <h5><a className="link" onMouseEnter={this.fillUp.bind(this)} onMouseLeave={this.empty.bind(this)} href="/portfolio">Portfolio</a></h5>
                             <h5><a className="link" onMouseEnter={this.fillUp.bind(this)} onMouseLeave={this.empty.bind(this)} href="/testimonials">Testimonials</a></h5>
+                            <h5><a className="link" onMouseEnter={this.fillUp.bind(this)} onMouseLeave={this.empty.bind(this)} target="_black" href="//blog.chibuokem.me">Blog</a></h5>
                             <h5><a className="link" onMouseEnter={this.fillUp.bind(this)} onMouseLeave={this.empty.bind(this)} href="/contact">Get In Touch</a></h5>
                         </div>
                         <div className="col s12 m6" id="col2">

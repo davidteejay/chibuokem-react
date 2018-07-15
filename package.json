@@ -6,6 +6,7 @@
     "axios": "^0.17.1",
     "jquery": "^3.2.1",
     "materialize-css": "^0.100.2",
+    "openssl": "^1.1.0",
     "react": "^16.1.1",
     "react-dom": "^16.1.1",
     "react-particles-js": "^2.2.0",

@@ -1,15 +1,29 @@
 import React, { Component } from 'react';
 import $ from 'jquery';
 import 'materialize-css';
+import Modal from './modal';
 
-export default class Wrapper1 extends Component {
+export default class Wrapper1 extends Component {    
     componentDidMount(){
-        $('.parallax').parallax();
+        $('.modal').modal({
+            opacity: 1,
+            starting_top: '0%',
+            ending_top: '0%',
+            complete: function(){
+                window.location.hash = "#!"
+            }
+        });
+
+        let hash  = window.location.hash;
+        if (hash === "#thanks"){
+            $('.modal').modal()
+            $('.modal').modal('open')
+        }
     }
-    
+
     render(){
         const accent = {
-            color: '#009688'
+            color: '#294778'
         }
         return (
             <div className="wrapper1 page" id="wrapper1">

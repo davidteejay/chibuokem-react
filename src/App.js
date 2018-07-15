@@ -17,21 +17,6 @@ const Modal = asyncComponent(() => import('./components/modal').then(module => m
 const NotFound = asyncComponent(() => import('./components/notFound').then(module => module.default))
 
 export default class App extends Component {
-    componentDidMount(){
-        $('.modal').modal({
-            opacity: 1,
-            starting_top: '0%',
-            ending_top: '0%',
-            complete: function(){
-                window.location.hash = "#!"
-            }
-        });
-        
-        let hash = window.location.hash;
-        if (hash === "#thanks"){
-            $(hash).modal('open');
-        }
-    }
     render(){
         return (
             <Router>

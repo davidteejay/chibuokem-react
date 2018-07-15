@@ -10,7 +10,7 @@ export default class Modal extends Component {
                             <div className="col s10">
                                 <h1>Thanks for reaching out</h1>
                                 <h4>I'll reply you shortly</h4><br/><br/>
-                                <button className="btn red z-depth-0 modal-action modal-close waves-effect waves-light center">&lsaquo; BACK</button>
+                                <button className="btn z-depth-0 modal-action modal-close waves-effect waves-light center">&lsaquo; BACK</button>
                             </div>
                             <div className="col s2 center">
                                 <ul className="social-menu" id="social-menu">

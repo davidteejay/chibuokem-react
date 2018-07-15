@@ -301,7 +301,7 @@ async@^1.4.0, async@^1.5.2:
   version "1.5.2"
   resolved "https://registry.yarnpkg.com/async/-/async-1.5.2.tgz#ec6a61ae56480c0c3cb241c95618e20892f9672a"
 
-async@^2.1.2, async@^2.1.4, async@^2.4.1:
+async@^2.0.0, async@^2.1.2, async@^2.1.4, async@^2.4.1:
   version "2.6.1"
   resolved "https://registry.yarnpkg.com/async/-/async-2.6.1.tgz#b245a23ca71930044ec53fa46aa00a3e87c6a610"
   dependencies:
@@ -4618,6 +4618,14 @@ mkdirp@0.5.1, mkdirp@0.5.x, "mkdirp@>=0.5 0", mkdirp@^0.5.0, mkdirp@^0.5.1, mkdi
   dependencies:
     minimist "0.0.8"
 
+mout@^0.11.1:
+  version "0.11.1"
+  resolved "https://registry.yarnpkg.com/mout/-/mout-0.11.1.tgz#ba3611df5f0e5b1ffbfd01166b8f02d1f5fa2b99"
+
+mout@^1.0.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/mout/-/mout-1.1.0.tgz#0b29d41e6a80fa9e2d4a5be9d602e1d9d02177f6"
+
 ms@2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/ms/-/ms-2.0.0.tgz#5608aeadfc00be6c2901df5f9861788de0d597c8"
@@ -4850,6 +4858,13 @@ number-is-nan@^1.0.0:
   version "1.4.4"
   resolved "https://registry.yarnpkg.com/nwmatcher/-/nwmatcher-1.4.4.tgz#2285631f34a95f0d0395cd900c96ed39b58f346e"
 
+nyks@^2.9.0:
+  version "2.31.3"
+  resolved "https://registry.yarnpkg.com/nyks/-/nyks-2.31.3.tgz#3dafdbbbeb765519c40b23747e9198c39a1036ba"
+  dependencies:
+    async "^2.0.0"
+    mout "^1.0.0"
+
 oauth-sign@~0.8.1, oauth-sign@~0.8.2:
   version "0.8.2"
   resolved "https://registry.yarnpkg.com/oauth-sign/-/oauth-sign-0.8.2.tgz#46a6ab7f0aead8deae9ec0565780b7d4efeb9d43"
@@ -4918,6 +4933,13 @@ onetime@^2.0.0:
   resolved "https://registry.yarnpkg.com/onetime/-/onetime-2.0.1.tgz#067428230fd67443b2794b22bba528b6867962d4"
   dependencies:
     mimic-fn "^1.0.0"
+
+openssl@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/openssl/-/openssl-1.1.0.tgz#72f925577ed0c99531306f84d1153ca10bd3aefd"
+  dependencies:
+    mout "^0.11.1"
+    nyks "^2.9.0"
 
 opn@5.1.0:
   version "5.1.0"
