@@ -3,26 +3,26 @@
 
 .menu-container {
     .menu {
-        height: 40px;
-        width: 40px;
-        background-color: #080808;
+        height: 60px;
+        width: 60px;
+        background-color: $theme;
         border-radius: 50%;
         @include fixed-pos($top: 20px, $right: 20px, $zIndex: 110000000000000000);
-        line-height: 40px;
+        line-height: 60px;
 
         a.button-collapse {
-            height: 40px;
-            width: 40px;
-            line-height: 40px;
+            height: 60px;
+            width: 60px;
+            line-height: 60px;
 
             i {
                 transition: all .5s;
 
                 &::before {
                     transition: all .5s;
-                    height: 40px;
-                    width: 40px;
-                    line-height: 40px;
+                    height: 60px;
+                    width: 60px;
+                    line-height: 60px;
                     color: #fff;
                     font-size: 26px;
                     text-align: center;
