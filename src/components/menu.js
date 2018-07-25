@@ -36,7 +36,7 @@ export default class Menu extends Component {
     render(){
         return (
             <div className="menu-container">
-                <div className="menu pulse">
+                <div className={ window.location.href.replace(window.location.origin, "") === "/" ? "menu pulse" : "menu">
                     <a href="#!" data-activates="sideMenu" className="button-collapse"><i className="mdi mdi-sort-variant"></i></a>
                 </div>
                 <div className="side-nav valign-wrapper" id="sideMenu">
