@@ -7,7 +7,7 @@
     .wrapper {
         width: 100%;
         height: auto;
-        @include background('../images/bg.png', top left, 20%, repeat);
+        @include background('../images/bg.png', top left, 30%, repeat);
         
         h4 {
             margin: 0 ;
