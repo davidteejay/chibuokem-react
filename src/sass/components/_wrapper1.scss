@@ -29,13 +29,14 @@
         }
         
         .valign-wrapper {
-            background-color: #080808;
+            // background-color: #080808;
+            background-color: transparent;
             height: 100%;
             min-height: fit-content;
 
-            @include mQ(992px){
-                background-color: rgba(#080808, .6);
-            }
+            // @include mQ(992px){
+            //     background-color: rgba(#080808, .6);
+            // }
             
             .valign {
                 width: 100%;
