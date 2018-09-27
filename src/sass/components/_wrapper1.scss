@@ -4,7 +4,7 @@
     height: 100%;
     min-height: fit-content;
     width: 100%;
-    @include background('https://cdn.rawgit.com/davidteejay/chibuokem/master/src/images/bg2.png', center, 8%, repeat);
+    @include background('https://cdn.rawgit.com/davidteejay/chibuokem/master/src/images/bg2.png', center, 10%, repeat);
 
     *::selection {
         background-color: #fff;
@@ -38,9 +38,9 @@
             height: 100%;
             min-height: fit-content;
 
-            //@include mQ(992px){
-            //     background-color: rgba(#080808, .6);
-            //}
+            @include mQ(992px){
+                 background-color: rgba(#080808, .6);
+            }
             
             .valign {
                 width: 100%;
