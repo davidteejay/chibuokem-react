@@ -2,11 +2,13 @@ import React, { Component } from 'react';
 import webdesign from '../images/logos/webdesign.png';
 import appdesign from '../images/logos/appdesign.png';
 import graphics from '../images/logos/graphicdesign.png';
+import Menu from './menu';
 
 export default class Wrapper2 extends Component {
     render(){
         return (
             <div className="wrapper2 page" id="wrapper2">
+                <Menu/>
                 <div className="wrapper">
                     <div className="things-do row valign-wrapper" id="things-do">
                         <div className="valign">

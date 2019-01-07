@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import $ from 'jquery';
+import Menu from './menu';
 
 export default class Wrapper5 extends Component {
     componentDidMount(){
@@ -12,6 +13,7 @@ export default class Wrapper5 extends Component {
     render(){
         return (
             <div className="wrapper5 page" id="wrapper5">
+                <Menu />
                 <div className="testimonials" id="testimonials">
                     <h4 className="light center">HERE'S WHAT PEOPLE ARE SAYING ABOUT ME:</h4>
                     <div className="underline2 slideanim"></div>

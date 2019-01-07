@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import $ from 'jquery';
 import 'materialize-css';
-import Modal from './modal';
+import Menu from './menu';
 
 export default class Wrapper1 extends Component {    
     componentDidMount(){
@@ -27,6 +27,7 @@ export default class Wrapper1 extends Component {
         }
         return (
             <div className="wrapper1 page" id="wrapper1">
+                <Menu dark/>
                 <div className="row">
                     <div className="col l6 m12 hide-on-med-and-down">
                     </div>

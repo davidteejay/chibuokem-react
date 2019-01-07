@@ -4,16 +4,18 @@
 .menu-container {
     .menu {
         height: 50px;
-        width: 50px;
-        background-color: $theme;
-        border-radius: 50%;
+        width: auto;
         @include fixed-pos($top: 20px, $right: 20px, $zIndex: 110000000000000000);
         line-height: 50px;
 
         a.button-collapse {
             height: 50px;
-            width: 50px;
+            width: auto;
             line-height: 50px;
+            font-size: 18px;
+            letter-spacing: 3px;
+            word-spacing: 10px;
+            color: #000;
 
             i {
                 transition: all .5s;
@@ -21,12 +23,18 @@
                 &::before {
                     transition: all .5s;
                     height: 50px;
-                    width: 50px;
+                    width: 30px;
                     line-height: 50px;
-                    color: #fff;
-                    font-size: 28px;
+                    color: #000;
+                    font-size: 18px;
                     text-align: center;
                 }
+            }
+        }
+
+        &.dark {
+            a, a i::before {
+                color: #fff;
             }
         }
     }
@@ -42,6 +50,7 @@
             margin: 0;
             width: 100%;
             padding: 50px;
+            height: auto;
 
             .col {
 
@@ -68,15 +77,20 @@
                             @include rel-pos();
 
                             &::after {
-                                @include abs-pos($top: 100%, $left: 0);
+                                @include abs-pos($top: calc(100% - 5px), $left: 0);
                                 width: 0;
                                 height: 2px;
                                 content: '';
                                 background-color: #fff;
+                                transition: all .5s;
                             }
 
                             &:hover {
                                 margin-left: 20px;
+
+                                &:after {
+                                    width: 75%
+                                }
                             }
                         }
                     }

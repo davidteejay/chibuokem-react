@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import $ from 'jquery';
 import Materialize from 'materialize-css';
+import Menu from './menu';
 
 export default class Wrapper4 extends Component {
     componentDidMount(){
@@ -23,6 +24,7 @@ export default class Wrapper4 extends Component {
         }
         return (
             <div className="wrapper4 page" id="wrapper4">
+                <Menu/>
                 <div className="cover">
                     <div className="row">
                         <h3 className="light center slideanim">GET IN TOUCH</h3>

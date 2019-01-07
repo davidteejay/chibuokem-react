@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
 import asyncComponent from './asyncComponent';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import Menu from './components/menu';
 import './icon/mdi/css/materialdesignicons.min.css';
 import './css/materialize.min.css';
 import './css/style.min.css';
+import $ from 'jquery';
 import 'materialize-css';
 
 const Wrapper1 = asyncComponent(() => import('./components/wrapper1').then(module => module.default))
@@ -20,6 +22,7 @@ export default class App extends Component {
             <Router>
                 <div className="wrapper">
                     <Modal/>
+                    <Menu/>
                     <Switch>
                         <Route exact path="/" component={Wrapper1}/>
                         <Route exact path="/skills" component={Wrapper2}/>
