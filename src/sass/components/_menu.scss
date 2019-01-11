@@ -45,6 +45,7 @@
         background: linear-gradient(to right, rgba($theme, 1), rgba(lighten($theme, 10%), 1), rgba(lighten($theme, 20%), 1));
         color: #fff;
         font-weight: 300;
+        z-index: 100 !important;
 
         .row {
             margin: 0;
@@ -53,6 +54,7 @@
             height: auto;
 
             .col {
+                background: transparent !important;
 
                 &#col1 {
                     border-right: 1px solid #fff;

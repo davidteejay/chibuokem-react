@@ -6,7 +6,7 @@ export default class Wrapper3 extends Component {
     render(){
         return (
             <div className="wrapper3 page" id="wrapper3">
-                <Menu/>
+                <Menu dark/>
                 <h4 className="slideanim center light">HERE ARE A FEW OF THE PROJECTS I'VE WORKED ON:</h4>
                 <div className="underline2 slideanim"></div>
                 <div className="row" id="portfolio">
