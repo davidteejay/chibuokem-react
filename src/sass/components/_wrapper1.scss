@@ -28,7 +28,7 @@
 		    @include background('https://cdn.rawgit.com/davidteejay/chibuokem/master/src/images/mainbg_cutout.png', top center);
 		}
 
-        .hide-on-med-and-down {
+        .pic {
             @include background('https://cdn.rawgit.com/davidteejay/chibuokem/master/src/images/mainbg_cutout.png', top center);
             height: 100%;
             min-height: fit-content;

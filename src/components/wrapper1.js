@@ -29,7 +29,7 @@ export default class Wrapper1 extends Component {
             <div className="wrapper1 page" id="wrapper1">
                 <Menu dark/>
                 <div className="row">
-                    <div className="col l6 m12 hide-on-med-and-down">
+                    <div className="col l6 m12 hide-on-med-and-down pic">
                     </div>
                     <div className="col l6 m12 valign-wrapper">
                         <div className="content valign">
