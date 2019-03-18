@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom'
 import $ from 'jquery';
 import 'materialize-css';
 
@@ -33,12 +34,32 @@ export default class Menu extends Component {
                 <div className="side-nav valign-wrapper" id="sideMenu">
                     <div className="valign row">
                         <div className="col s12 m6" id="col1">
-                            <h5><a className="link" href="/">My Bio</a></h5>
-                            <h5><a className="link" href="/skills">Things I Do</a></h5>
-                            <h5><a className="link" href="/portfolio">Portfolio</a></h5>
-                            <h5><a className="link" href="/testimonials">Testimonials</a></h5>
+                            <h5>
+                                <Link to="/" className="link">
+                                    <span>My Bio</span>
+                                </Link>
+                            </h5>
+                            <h5>
+                                <Link className="link" to="/skills">
+                                    <span>Things I Do</span>
+                                </Link>
+                            </h5>
+                            <h5>
+                                <Link className="link" to="/portfolio">
+                                    <span>Portfolio</span>
+                                </Link>
+                            </h5>
+                            <h5>
+                                <Link className="link" to="/testimonials">
+                                    <span>Testimonials</span>
+                                </Link>
+                            </h5>
                             <h5><a className="link" target="_black" href="//blog.chibuokem.me">Blog</a></h5>
-                            <h5><a className="link" href="/contact">Get In Touch</a></h5>
+                            <h5>
+                                <Link className="link" to="/contact">
+                                    <span>Get In Touch</span>
+                                </Link>
+                            </h5>
                         </div>
                         <div className="col s12 m6" id="col2">
                             

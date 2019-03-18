@@ -25,23 +25,28 @@
         margin: 0 !important;
         
         @include mQ(992px){
-		    @include background('https://cdn.rawgit.com/davidteejay/chibuokem/master/src/images/mainbg_2.png', top center);
+		    @include background('https://cdn.rawgit.com/davidteejay/chibuokem/master/src/images/mainbg_2.jpg', top center);
 		}
 
         .pic {
-            @include background('https://cdn.rawgit.com/davidteejay/chibuokem/master/src/images/mainbg_2.png', top center);
+            padding: 20px;
             height: 100%;
-            min-height: fit-content;
+            background-color: #fff;
+
+            .img {
+                @include background('https://cdn.rawgit.com/davidteejay/chibuokem/master/src/images/mainbg_2.jpg', top center);
+                height: 100%;
+                min-height: fit-content;
+            }
         }
         
         .valign-wrapper {
             background-color: #fff;
-            background-color: transparent;
             height: 100%;
             min-height: fit-content;
 
             @include mQ(992px){
-                 background-color: rgba(#fff, .6);
+                 background-color: rgba(#fff, .5);
             }
             
             .valign {
@@ -50,18 +55,32 @@
                 padding: 50px;
                 
                 h4 {
-                    font-size: 22px;
+                    font-size: 26px;
+                    color: #000;
+                    
+                    @include mQ(1120px){
+                        font-size: 18px;
+                    }
+
+                    @include mQ(992px){
+                        margin-bottom: 10px;
+                        text-align: center;
+                    }
                 }
 
                 h1 {
                     font: {
-                        size: 26px;
+                        size: 32px;
                         weight: lighter;
                     }
                     text-transform: uppercase;
                     letter-spacing: 3px;
                     margin: 0;
                     color: #000;
+
+                    @include mQ(992px){
+                        text-align: center;
+                    }
                 }
 
                 p {
@@ -107,16 +126,6 @@
                                 color: $theme;
                             }
                         }
-                    }
-                }
-                
-                h4 {
-                    font-size: 26px;
-                    margin: 0;
-                    color: #000;
-                    
-                    @include mQ(1120px){
-                        font-size: 18px;
                     }
                 }
             }

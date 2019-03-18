@@ -1,16 +1,13 @@
 .wrapper3 {
-    padding: 30px 35px;
+    padding: 50px 35px;
 	height: fit-content;
     width: 100%;
     background-color: transparent;
-    @include abs-pos($zIndex: 5);
+    background-image: url('../images/bg2.png');
+    background-repeat: repeat;
+    background-size: 10%;
 
-    .particles-js {
-        @include fixed-pos($top: 00, $left: 0, $zIndex: -1);
-        height: 100%;
-        width: 100vw;
-        background-color: #080808;
-    }
+    // @include 
     
     h4 {
         margin: 0;
@@ -28,6 +25,7 @@
         
         .col {
             padding: 40px;
+            padding-top: 20px;
             min-height: auto;
 
             @include mQ(992px){
@@ -35,9 +33,9 @@
             }
 
             img {
-                width: 90%;
+                width: auto;
                 margin: 0 auto;
-                height: auto;
+                height: 200px;
             }
 
             h5 {
@@ -45,6 +43,9 @@
                 width: 100%;
                 margin-top: 0;
                 font-size: 17px;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                overflow: hidden;
             }
     
             a {

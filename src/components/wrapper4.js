@@ -25,8 +25,8 @@ export default class Wrapper4 extends Component {
         return (
             <div className="wrapper4 page" id="wrapper4">
                 <Menu/>
-                <div className="cover">
-                    <div className="row">
+                <div className="cover valign-wrapper">
+                    <div className="row valign">
                         <h3 className="light center slideanim">GET IN TOUCH</h3>
                         <div className="underline slideanim"></div>
                         <div className="col s10">
