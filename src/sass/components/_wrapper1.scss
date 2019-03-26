@@ -25,7 +25,7 @@
         margin: 0 !important;
         
         @include mQ(992px){
-		    @include background('https://cdn.rawgit.com/davidteejay/chibuokem/master/src/images/mainbg_2.jpg', top center);
+		    @include background('https://cdn.rawgit.com/davidteejay/chibuokem/master/src/images/mainbg_2.jpg', top center, $attach: fixed);
 		}
 
         .pic {

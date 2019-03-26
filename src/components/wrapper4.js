@@ -24,7 +24,7 @@ export default class Wrapper4 extends Component {
         }
         return (
             <div className="wrapper4 page" id="wrapper4">
-                <Menu/>
+                <Menu dark/>
                 <div className="cover valign-wrapper">
                     <div className="row valign">
                         <h3 className="light center slideanim">GET IN TOUCH</h3>
@@ -60,7 +60,7 @@ export default class Wrapper4 extends Component {
                                 <li><a href="https://github.com/davidteejay" target="_blank" rel="noopener noreferrer" data-delay="50" data-tooltip="GitHub" data-position="left" className="btn-floating tooltipped z-depth-0 transparent center"><i className="mdi mdi-github-circle"></i></a></li>
                                 <li><a href="https://linkedin.com/in/chibuokem-onyekwelu" target="_blank" rel="noopener noreferrer" data-delay="50" data-tooltip="LinkedIn" data-position="left" className="btn-floating tooltipped z-depth-0 transparent center"><i className="mdi mdi-linkedin"></i></a></li>
                                 <li><a href="https://facebook.com/chibuokem.onyekwelu" target="_blank" rel="noopener noreferrer" data-delay="50" data-tooltip="Facebook" data-position="left" className="btn-floating tooltipped z-depth-0 transparent center"><i className="mdi mdi-facebook"></i></a></li>
-                                <li><a href="https://instagram.com/i_am_tushh" target="_blank" rel="noopener noreferrer" data-delay="50" data-tooltip="Instagram" data-position="left" className="btn-floating tooltipped z-depth-0 transparent center"><i className="mdi mdi-instagram"></i></a></li>
+                                <li><a href="https://instagram.com/dev_chii" target="_blank" rel="noopener noreferrer" data-delay="50" data-tooltip="Instagram" data-position="left" className="btn-floating tooltipped z-depth-0 transparent center"><i className="mdi mdi-instagram"></i></a></li>
                                 <li><a href="https://twitter.com/DavidTeejayC" target="_blank" rel="noopener noreferrer" data-delay="50" data-tooltip="Twitter" data-position="left" className="btn-floating tooltipped z-depth-0 transparent center"><i className="mdi mdi-twitter"></i></a></li>
                                 <li><a href="https://plus.google.com/112517983973843716765" target="_blank" rel="noopener noreferrer" data-delay="50" data-tooltip="Google+" data-position="left" className="btn-floating tooltipped z-depth-0 transparent center"><i className="mdi mdi-google-plus"></i></a></li>
                             </ul>

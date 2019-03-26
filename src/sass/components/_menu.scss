@@ -8,6 +8,11 @@
         @include fixed-pos($top: 20px, $right: 20px, $zIndex: 110000000000000000);
         line-height: 50px;
 
+        @include mQ(600px){
+            top: 10px;
+            right: 10px;
+        }
+
         a.button-collapse {
             height: 50px;
             width: auto;

@@ -6,8 +6,6 @@
     background-image: url('../images/bg2.png');
     background-repeat: repeat;
     background-size: 10%;
-
-    // @include 
     
     h4 {
         margin: 0;
@@ -28,14 +26,18 @@
             padding-top: 20px;
             min-height: auto;
 
+            @media screen and (min-width: 601px){
+                min-height: 360px;
+            }
+
             @include mQ(992px){
                 padding: 20px;
             }
 
             img {
-                width: auto;
+                width: 100%;
                 margin: 0 auto;
-                height: 200px;
+                height: auto;
             }
 
             h5 {

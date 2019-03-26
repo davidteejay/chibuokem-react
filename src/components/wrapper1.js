@@ -1,7 +1,8 @@
-import React, { Component } from 'react';
-import $ from 'jquery';
-import 'materialize-css';
-import Menu from './menu';
+import React, { Component } from 'react'
+import $ from 'jquery'
+import 'materialize-css'
+import Menu from './menu'
+import Modal from './modal'
 
 export default class Wrapper1 extends Component {    
     componentDidMount(){
@@ -12,9 +13,9 @@ export default class Wrapper1 extends Component {
             complete: function(){
                 window.location.hash = "#!"
             }
-        });
+        })
 
-        let hash  = window.location.hash;
+        let hash  = window.location.hash
         if (hash === "#thanks"){
             $('.modal').modal()
             $('.modal').modal('open')
@@ -28,6 +29,7 @@ export default class Wrapper1 extends Component {
         return (
             <div className="wrapper1 page" id="wrapper1">
                 <Menu/>
+                <Modal/>
                 <div className="row page-row">
                     <div className="col l6 m12 hide-on-med-and-down pic">
                         <div className="img"/>

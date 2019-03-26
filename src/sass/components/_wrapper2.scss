@@ -24,6 +24,10 @@
             color: #000 !important;
             background-color: rgba(#fff, .9);
 
+            @include mQ(600px){
+                padding: 50px 30px;
+            }
+
             .valign {
                 width: 100%;
                 text-align: center;
