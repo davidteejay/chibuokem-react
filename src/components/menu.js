@@ -35,30 +35,30 @@ export default class Menu extends Component {
                     <div className="valign row">
                         <div className="col s12 m6" id="col1">
                             <h5>
-                                <Link to="/" className="link">
+                                <a href="#wrapper1" className="link">
                                     <span>My Bio</span>
-                                </Link>
+                                </a>
                             </h5>
                             <h5>
-                                <Link className="link" to="/skills">
+                                <a className="link" href="#wrapper2">
                                     <span>Things I Do</span>
-                                </Link>
+                                </a>
                             </h5>
                             <h5>
-                                <Link className="link" to="/portfolio">
+                                <a className="link" href="#wrapper3">
                                     <span>Portfolio</span>
-                                </Link>
+                                </a>
                             </h5>
-                            <h5>
-                                <Link className="link" to="/testimonials">
+                            {/* <h5>
+                                <a className="link" href="/testimonials">
                                     <span>Testimonials</span>
                                 </Link>
-                            </h5>
+                            </h5> */}
                             <h5><a className="link" target="_black" href="//blog.chibuokem.me">Blog</a></h5>
                             <h5>
-                                <Link className="link" to="/contact">
+                                <a className="link" href="#wrapper4">
                                     <span>Get In Touch</span>
-                                </Link>
+                                </a>
                             </h5>
                         </div>
                         <div className="col s12 m6" id="col2">

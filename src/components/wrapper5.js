@@ -12,8 +12,8 @@ export default class Wrapper5 extends Component {
 
     render(){
         return (
-            <div className="wrapper5 page" id="wrapper5">
-                <Menu />
+            <div className="wrapper5 page scrollspy" id="wrapper5">
+                {/* <Menu /> */}
                 <div className="testimonials valign-wrapper" id="testimonials">
                     <div className="valign">
                         <h4 className="light center">HERE'S WHAT PEOPLE ARE SAYING ABOUT ME:</h4>
