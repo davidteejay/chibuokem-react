@@ -10,6 +10,11 @@ body, html {
     }
     color: #000;
 
+    .privacy {
+        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
+        padding: 1em;
+    }
+
     @include mQ(600px){
         background-position: top center;
     }
