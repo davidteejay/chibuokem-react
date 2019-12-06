@@ -55,6 +55,7 @@ export default props => {
           setError(data.message)
         } else {
           showSuccess(true)
+          setTimeout(() => window.location = 'funbanye://', 2000)
         }
       })
       .catch(({ response: { data: { message } } }) => {
@@ -82,7 +83,7 @@ export default props => {
           <h6 style={styles.text}>You can now go back to the app</h6>
         </div>
       )}
-      <div style={{ ...styles.flex, ...styles.payContainer }}>
+      {!success && !loading && <div style={{ ...styles.flex, ...styles.payContainer }}>
         {config.amount && <RavePaymentModal
           text="Make Payment"
           class="payButton"
@@ -96,7 +97,7 @@ export default props => {
           isProduction={false}
           tag="button"
         />}
-      </div>
+      </div>}
     </Fragment>
   )
 }
