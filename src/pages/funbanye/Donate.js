@@ -34,17 +34,23 @@ export default props => {
   })
 
   const fetchResponse = response => {
+    alert('fetching')
     console.log(response)
     setLoading(true)
     setError(null)
     showSuccess(false)
 
-    const { causeId, amount, trxnRef, socketId, userId } = config
+    const { causeId, amount, socketId, userId } = config
     axios
       .post('https://ngo-backend.herokuapp.com/api/v1/donations', {
-        trxnRef, amount, causeId, socketId, userId
+        trxnRef: response.tx.txRef || response.data.tx.txRef,
+        amount,
+        causeId,
+        socketId,
+        userId
       })
-      .then(({ data: { data } }) => {
+      .then(res => {
+        const { data } = res;
         if (data.error) {
           setError(data.message)
         } else {
