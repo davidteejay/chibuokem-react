@@ -61,14 +61,14 @@ export default props => {
       {loading && <Loading/>}
       {!loading && error && (
         <div style={{ ...styles.flex, ...styles.absolute }}>
-          <h3>Oops!! Something went wrong</h3>
-          <h6>{error ? error : ''}</h6>
+          <h3 style={styles.text}>Oops!! Something went wrong</h3>
+          <h6 style={styles.text}>{error ? error : ''}</h6>
         </div>
       )}
       {!loading && success && (
         <div style={{ ...styles.flex, ...styles.absolute }}>
-          <h3>Donation Successful!!!</h3>
-          <h6>You can now go back to the app</h6>
+          <h3 style={styles.text}>Donation Successful!!!</h3>
+          <h6 style={styles.text}>You can now go back to the app</h6>
         </div>
       )}
       <div style={{ ...styles.flex, ...styles.payContainer }}>
@@ -80,8 +80,8 @@ export default props => {
           email={config.email}
           amount={config.amount}
           ravePubKey={config.key}
-          callback={fetchResponse}
-          close={() => setError('Transaction was cancelled')}
+          callback={() => fetchResponse()}
+          // close={() => setError('Transaction was cancelled')}
           isProduction={false}
           tag="button"
         />}
@@ -107,5 +107,8 @@ const styles = {
     zIndex: 100000,
     flexDirection: 'column',
     backgroundColor: '#fff'
+  },
+  text: {
+    textAlign: 'center'
   }
 }
