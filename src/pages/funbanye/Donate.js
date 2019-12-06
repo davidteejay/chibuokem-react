@@ -33,7 +33,8 @@ export default props => {
     })
   })
 
-  const fetchResponse = () => {
+  const fetchResponse = response => {
+    console.log(response)
     setLoading(true)
     setError(null)
     showSuccess(false)
@@ -54,6 +55,10 @@ export default props => {
         setError(message)
       })
       .finally(() => setLoading(false))
+  }
+
+  const close = () => {
+    setError('Transaction was Cancelled')
   }
 
   return (
@@ -80,8 +85,8 @@ export default props => {
           email={config.email}
           amount={config.amount}
           ravePubKey={config.key}
-          callback={() => fetchResponse()}
-          // close={() => setError('Transaction was cancelled')}
+          callback={fetchResponse}
+          close={close}
           isProduction={false}
           tag="button"
         />}
