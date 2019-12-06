@@ -92,7 +92,7 @@ export default props => {
           amount={config.amount}
           ravePubKey={config.key}
           callback={fetchResponse}
-          close={close}
+          // close={close}
           isProduction={false}
           tag="button"
         />}
