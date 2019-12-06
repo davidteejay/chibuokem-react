@@ -15,6 +15,7 @@ const Home  = React.lazy(() => import('./pages/Home'))
 const NotFound = React.lazy(() => import('./components/notFound'))
 
 const FunbanyePP = React.lazy(() => import('./pages/funbanye/Privacy'))
+const FunbanyeDonate = React.lazy(() => import('./pages/funbanye/Donate'))
 
 export default class App extends Component {
     render(){
@@ -28,7 +29,8 @@ export default class App extends Component {
                             <Route exact path="/portfolio" component={Wrapper3} />
                             <Route exact path="/testimonials" component={Wrapper5} />
                             <Route exact path="/contact" component={Wrapper4} /> */}
-                            <Route exact path="/funbanye/privacy-policy" component={FunbanyePP}/>
+                            <Route exact path="/funbanye/privacy-policy" component={FunbanyePP} />
+                            <Route exact path="/funbanye/donate" component={FunbanyeDonate} />
                             <Route exact path="*" component={NotFound} />
                         </Switch>
                     </Router>

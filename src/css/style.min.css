@@ -352,6 +352,14 @@ body, html {
         margin: 10px auto; }
       body #root .wrapper .underline2, html #root .wrapper .underline2 {
         width: 120px !important; }
+      body #root .wrapper .payButton, html #root .wrapper .payButton {
+        background-color: #788FFE;
+        color: #fff;
+        height: 50px;
+        width: 200px;
+        outline: none;
+        border: none;
+        border-radius: 5px; }
 
 .wrapper1 {
   height: 100%;

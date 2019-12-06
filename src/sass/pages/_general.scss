@@ -56,6 +56,16 @@ body, html {
                 @extend .underline;
                 width: 120px !important;
             }
+
+            .payButton {
+                background-color: #788FFE;
+                color: #fff;
+                height: 50px;
+                width: 200px;
+                outline: none;
+                border: none;
+                border-radius: 5px;
+            }
         }
     }
 }
