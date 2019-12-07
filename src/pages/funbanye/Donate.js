@@ -29,12 +29,12 @@ export default props => {
       ...config,
       amount: parseInt(config.amount),
       trxnRef: getReference(),
-      key: 'FLWPUBK_TEST-c25292465e6b53e91e236cd46ade12ee-X',
+      key: 'FLWPUBK-4ab0ab41f6e22340135b36912d70bb1b-X',
     })
   })
 
   const fetchResponse = response => {
-    alert('fetching')
+    // alert('fetching')
     console.log(response)
     setLoading(true)
     setError(null)
@@ -51,6 +51,7 @@ export default props => {
       })
       .then(res => {
         const { data } = res;
+        setLoading(false)
         if (data.error) {
           setError(data.message)
         } else {
@@ -59,9 +60,9 @@ export default props => {
         }
       })
       .catch(({ response: { data: { message } } }) => {
+        setLoading(false)
         setError(message)
       })
-      .finally(() => setLoading(false))
   }
 
   const close = () => {
