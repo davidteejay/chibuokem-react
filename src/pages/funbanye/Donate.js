@@ -29,7 +29,7 @@ export default props => {
       ...config,
       amount: parseInt(config.amount),
       trxnRef: getReference(),
-      key: 'FLWPUBK-4ab0ab41f6e22340135b36912d70bb1b-X',
+      key: 'FLWPUBK-cb9ca9410e6ac5c792cb131612400f97-X',
     })
   })
 
